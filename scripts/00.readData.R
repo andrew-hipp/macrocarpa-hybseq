@@ -13,8 +13,8 @@ readDNA = TRUE
 cleanDNAnames = TRUE
 
 if(readDNA) {
-  dna.snps <- mclapply(dir('../DATA/FASTA.2018-10-09/', full = T), fasta2DNAbin, snpOnly = TRUE, mc.cores = nCores)
-  names(dna.snps) <- dir('../DATA/FASTA.2018-10-09/')
+  dna.snps <- mclapply(dir('../DATA/FASTA.2018-10-11/', full = T), fasta2DNAbin, snpOnly = TRUE, mc.cores = nCores)
+  names(dna.snps) <- dir('../DATA/FASTA.2018-10-11/')
 }
 
 if(cleanDNAnames) {
