@@ -63,3 +63,5 @@ row.names(dna.all) <-
 inds.struct <- grep('macro|alba|stellata|bicolor|muehl', row.names(dna.all), value = T)
 a = DNAbin2str(list(dna.all[grep('macro|alba|stellata|bicolor|muehl', row.names(dna.all)), ]),
                 file='hybseq.v3.2018-10-10')
+
+## making some changes that matter to me
