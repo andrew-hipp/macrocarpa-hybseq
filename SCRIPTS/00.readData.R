@@ -5,6 +5,7 @@ library(adegenet)
 library(ape)
 library(parallel)
 library(pegas)
+library(magrittr)
 
 source('../SCRIPTS/DNAbin2str.R')
 
