@@ -9,7 +9,7 @@ library(pegas)
 source('../SCRIPTS/DNAbin2str.R')
 
 nCores = 14
-readDNA = FALSE
+if(!exists('readDNA')) readDNA = TRUE
 cleanDNAnames = TRUE
 
 if(readDNA) {
