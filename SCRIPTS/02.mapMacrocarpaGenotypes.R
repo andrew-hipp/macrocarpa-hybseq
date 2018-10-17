@@ -10,15 +10,15 @@ K=8
 kCols <- 6:(K+5)
 dat.mac <- read.table('../ZZZ.DISTRUCT/hybseq.k8.20181016_f.indivq') # updated 2018-10-17
 dat.mac <- cbind(dat.mac, dat.mapping[sapply(strsplit(inds.struct, '|', fixed = T), '[', 2), ])
-for(i in c('Quercus bicolor',
+for(i in c('Quercus muehlenbergii',
+            'Quercus alba',
+            'Quercus bicolor',
             'Quercus stellata')) {
   names(dat.mac)[
     which(names(dat.mac) == apply(dat.mac[dat.mac$Species == i, ], 2, function(x) mean(as.numeric(x))) %>% '['(kCols) %>% sort %>% tail(1) %>% names)
     ] <- i
   }
-for(i in c('Quercus muehlenbergii',
-            'Quercus alba',
-            'Quercus macrocarpa')) {
+for(i in c('Quercus macrocarpa')) {
   names(dat.mac)[
     which(names(dat.mac) %in% (apply(dat.mac[dat.mac$Species == i, ], 2, function(x) mean(as.numeric(x))) %>% '['(kCols) %>% sort %>% tail(2) %>% names))
     ] <- paste(i, 1:2, sep = '-')
