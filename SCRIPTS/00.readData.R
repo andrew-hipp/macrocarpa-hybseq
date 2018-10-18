@@ -20,6 +20,7 @@ if(readDNA) {
 
 if(cleanDNAnames) {
   for(i in names(dna.snps)) {
+    ## should be cleaved out into a separate function, as I do it 2x
     row.names(dna.snps[[i]]) <-
       strsplit(row.names(dna.snps[[i]]), "_", fixed = T) %>%
       sapply(., '[', 3)
