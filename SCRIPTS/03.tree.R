@@ -20,14 +20,3 @@ x= phylo.to.map(drop.tip(tr.mac, setdiff(tr$tip.label, row.names(tr.dat))),
               tr.dat[grep('macrocarpa', row.names(tr.dat)), ],
               xlim = c(-120, -70), ylim = c(30, 55),
               fsize = 0.00000001)
-
-
-
-
-
-             tr.dat$lat <- as.numeric(tr.dat$lat)
-
-
-
-             phylo.to.map(drop.tip(tr, grep('macrocarpa', tr$tip.label, invert = T)),
-             tr.dat[grep('macrocarpa', row.names(tr.dat)), ])
