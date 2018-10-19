@@ -1,0 +1,1778 @@
+%!PS-Adobe-3.0 EPSF-3.0 
+% Graphical display of results from structure
+% distruct by Noah Rosenberg, version 1.0 Nov 2002 
+%                             version 1.1 Jun 2007 
+% Command line arguments: ./distruct -M 5 -N 263 -K 5 -b hybseq.v3.2018-10-10.pop_labels -c quercus.perm -p hybseq.v3.2018-10-10_f.popq -i hybseq.v3.2018-10-10_f.indivq -o hybseq.v3.2018-10-10.ps -d drawparams 
+gsave
+
+% Population Q values from the file: hybseq.v3.2018-10-10_f.popq
+% 5 clusters, 5 populations, 0 individuals
+% Pop. code, number of individuals, membership coefficients
+% 1	70	0.004	0.047	0.02	0.001	0.927	
+% 2	7	0.106	0.717	0.049	0.086	0.042	
+% 3	145	0.002	0.696	0.296	0.001	0.004	
+% 4	23	0.941	0.056	0.001	0.001	0	
+% 5	18	0	0.007	0.027	0.966	0	
+
+
+% Individual Q values from the file: hybseq.v3.2018-10-10_f.indivq
+% Population code, individual label, membership coefficients
+% 4	muehl	1	0	0	0	0	
+% 3	macro	0	0.407	0.593	0	0	
+% 4	muehl_1	1	0	0	0	0	
+% 4	muehl_2	1	0	0	0	0	
+% 4	muehl_3	1	0	0	0	0	
+% 1	alba	0	0	0	0	1	
+% 1	alba_1	0	0	0	0	1	
+% 1	alba_2	0	0	0	0	1	
+% 1	alba_3	0	0.002	0.001	0	0.996	
+% 1	alba_4	0	0	0	0	1	
+% 1	alba_5	0	0	0	0	1	
+% 1	alba_6	0	0	0	0	1	
+% 1	alba_7	0	0	0	0	1	
+% 1	alba_8	0	0	0	0	1	
+% 1	alba_9	0.029	0.314	0.05	0.012	0.595	
+% 1	alba_10	0	0	0	0	1	
+% 1	alba_11	0	0	0	0	1	
+% 1	alba_12	0	0	0	0	1	
+% 1	alba_13	0	0.019	0	0	0.981	
+% 1	alba_14	0	0	0	0	1	
+% 1	alba_15	0	0	0	0	1	
+% 1	alba_16	0	0	0	0	1	
+% 1	alba_17	0	0	0	0	1	
+% 1	alba_18	0	0	0	0	1	
+% 1	alba_19	0	0.47	0.002	0	0.528	
+% 1	alba_20	0	0.05	0.287	0	0.663	
+% 1	alba_21	0	0.222	0.411	0	0.366	
+% 4	muehl_4	1	0	0	0	0	
+% 4	muehl_5	1	0	0	0	0	
+% 1	alba_22	0	0.494	0.506	0	0	
+% 3	macro_1	0	0.32	0.68	0	0	
+% 3	macro_2	0	0.794	0.041	0	0.165	
+% 1	alba_23	0	0	0	0	1	
+% 1	alba_24	0	0.407	0.068	0	0.525	
+% 1	alba_25	0	0.37	0.02	0.001	0.61	
+% 1	alba_26	0	0	0	0	1	
+% 1	alba_27	0	0	0	0	1	
+% 1	alba_28	0	0	0	0	1	
+% 1	alba_29	0	0	0	0	1	
+% 1	alba_30	0	0	0	0	1	
+% 1	alba_31	0	0	0	0	1	
+% 1	alba_32	0	0	0	0	1	
+% 1	alba_33	0	0	0	0	1	
+% 1	alba_34	0	0	0	0	1	
+% 1	alba_35	0	0	0	0	1	
+% 1	alba_36	0	0	0	0	1	
+% 1	alba_37	0	0	0	0	1	
+% 1	alba_38	0	0	0	0	1	
+% 1	alba_39	0	0.004	0.003	0	0.993	
+% 1	alba_40	0	0.489	0.034	0	0.477	
+% 1	alba_41	0	0	0.001	0	0.999	
+% 1	alba_42	0	0.018	0	0	0.982	
+% 1	alba_43	0	0	0	0	1	
+% 1	alba_44	0	0	0	0	1	
+% 2	bicol	0.151	0.714	0.002	0.085	0.048	
+% 4	muehl_6	1	0	0	0	0	
+% 4	muehl_7	1	0	0	0	0	
+% 2	bicol_1	0.13	0.691	0.003	0.111	0.065	
+% 3	macro_3	0.025	0.463	0.498	0.015	0	
+% 2	bicol_2	0.121	0.682	0.016	0.114	0.066	
+% 2	bicol_3	0.138	0.649	0.068	0.113	0.033	
+% 1	alba_45	0.104	0	0	0	0.896	
+% 1	alba_46	0.094	0	0	0	0.906	
+% 2	bicol_4	0.032	0.858	0.109	0	0	
+% 2	bicol_5	0.101	0.641	0.088	0.116	0.054	
+% 3	macro_4	0	0.878	0.121	0	0	
+% 3	macro_5	0	0.828	0.172	0	0	
+% 3	macro_6	0.007	0.317	0.675	0.001	0.001	
+% 3	macro_7	0	0.194	0.806	0	0	
+% 3	macro_8	0	0.238	0.762	0	0	
+% 3	macro_9	0	0.883	0.117	0	0	
+% 3	macro_10	0.003	0.05	0.93	0.016	0	
+% 3	macro_11	0	0.327	0.673	0	0	
+% 3	macro_12	0	0.854	0.146	0	0	
+% 3	macro_13	0	0.618	0.382	0	0	
+% 3	macro_14	0	0.957	0.043	0	0	
+% 3	macro_15	0	0.193	0.807	0	0	
+% 3	macro_16	0	0.346	0.654	0	0	
+% 3	macro_17	0	0.821	0.153	0	0.026	
+% 3	macro_18	0	0.931	0.067	0	0.001	
+% 3	macro_19	0	0.397	0.603	0	0	
+% 3	macro_20	0	0.334	0.666	0	0	
+% 3	macro_21	0	0.407	0.593	0	0	
+% 3	macro_22	0	0.555	0.445	0	0	
+% 3	macro_23	0.042	0.818	0.093	0.034	0.013	
+% 3	macro_24	0	0.774	0.226	0	0	
+% 3	macro_25	0	0.885	0.115	0	0	
+% 1	alba_47	0	0.008	0	0	0.992	
+% 3	macro_26	0	0.874	0.126	0	0	
+% 3	macro_27	0	0.952	0.048	0	0	
+% 3	macro_28	0	0.671	0.328	0	0	
+% 3	macro_29	0	0.665	0.334	0	0	
+% 3	macro_30	0	0.852	0.147	0	0.001	
+% 3	macro_31	0.011	0.988	0.001	0	0	
+% 3	macro_32	0	0.834	0.166	0	0	
+% 3	macro_33	0	0.893	0.107	0	0	
+% 3	macro_34	0	0.933	0.067	0	0	
+% 3	macro_35	0	0.872	0.128	0	0	
+% 3	macro_36	0	0.9	0.1	0	0	
+% 3	macro_37	0	0.905	0.095	0	0	
+% 3	macro_38	0	0.79	0.21	0	0	
+% 3	macro_39	0	0.848	0.151	0	0.001	
+% 3	macro_40	0	0.872	0.128	0	0	
+% 3	macro_41	0.004	0.858	0.138	0	0	
+% 3	macro_42	0	0.226	0.774	0	0	
+% 3	macro_43	0	0.681	0.319	0	0	
+% 3	macro_44	0	0.606	0.394	0	0	
+% 3	macro_45	0	0.855	0.145	0	0	
+% 3	macro_46	0	0.355	0.645	0	0	
+% 3	macro_47	0	0.278	0.722	0	0	
+% 3	macro_48	0	0.082	0.918	0	0	
+% 3	macro_49	0	0	1	0	0	
+% 3	macro_50	0	0.132	0.868	0	0	
+% 3	macro_51	0	0.478	0.522	0	0	
+% 3	macro_52	0	0.347	0.653	0	0	
+% 1	alba_48	0	0	0	0	1	
+% 3	macro_53	0	0.961	0.039	0	0	
+% 3	macro_54	0	0.903	0.097	0	0	
+% 3	macro_55	0	0.927	0.072	0	0	
+% 3	macro_56	0	0.938	0.062	0	0	
+% 3	macro_57	0	0.958	0.042	0	0	
+% 3	macro_58	0	0.94	0.06	0	0	
+% 3	macro_59	0	0.867	0.133	0	0	
+% 3	macro_60	0	0.789	0.211	0	0	
+% 3	macro_61	0	0.881	0.119	0	0	
+% 3	macro_62	0	0.371	0.629	0	0	
+% 3	macro_63	0.002	0.365	0.634	0	0	
+% 3	macro_64	0	0.386	0.614	0	0	
+% 3	macro_65	0	0.376	0.624	0	0	
+% 3	macro_66	0	0.205	0.795	0	0	
+% 3	macro_67	0	0	1	0	0	
+% 3	macro_68	0	0.163	0.837	0	0	
+% 3	macro_69	0	0.214	0.786	0	0	
+% 3	macro_70	0	0.576	0.424	0	0	
+% 3	macro_71	0	0.791	0.209	0	0	
+% 3	macro_72	0	0.816	0.184	0	0	
+% 3	macro_73	0	0.803	0.197	0	0	
+% 3	macro_74	0.05	0.657	0.165	0.049	0.079	
+% 3	macro_75	0	0.9	0.1	0	0	
+% 3	macro_76	0.019	0.882	0.099	0	0	
+% 3	macro_77	0	0.856	0.144	0	0	
+% 3	macro_78	0.027	0.822	0.063	0.025	0.063	
+% 3	macro_79	0	0.87	0.13	0	0	
+% 3	macro_80	0	0.894	0.094	0	0.012	
+% 3	macro_81	0.002	0.8	0.177	0	0.021	
+% 3	macro_82	0.007	0.772	0.208	0.009	0.004	
+% 3	macro_83	0	0.829	0.164	0	0.007	
+% 3	macro_84	0.003	0.907	0.087	0.003	0	
+% 3	macro_85	0	0.939	0.061	0	0	
+% 3	macro_86	0	0.95	0.05	0	0	
+% 3	macro_87	0	0.882	0.118	0	0	
+% 3	macro_88	0	0.81	0.19	0	0	
+% 3	macro_89	0	0.826	0.173	0	0	
+% 3	macro_90	0.037	0.837	0.109	0	0.017	
+% 3	macro_91	0	0.331	0.669	0	0	
+% 3	macro_92	0	0.321	0.679	0	0	
+% 3	macro_93	0	0.298	0.702	0	0	
+% 3	macro_94	0	0.355	0.644	0	0	
+% 3	macro_95	0	0.506	0.494	0	0	
+% 3	macro_96	0	0.528	0.472	0	0	
+% 3	macro_97	0.009	0.411	0.579	0	0	
+% 3	macro_98	0	0.438	0.561	0	0	
+% 3	macro_99	0.007	0.398	0.595	0	0	
+% 1	alba_49	0	0	0	0	1	
+% 1	alba_50	0	0	0	0	1	
+% 3	macro_100	0	0.87	0.121	0.008	0	
+% 3	macro_101	0.001	0.904	0.049	0	0.046	
+% 3	macro_102	0	0.71	0.278	0	0.012	
+% 3	macro_103	0	0.777	0.208	0	0.015	
+% 1	alba_51	0	0	0	0	1	
+% 3	macro_104	0	0.897	0.103	0	0	
+% 3	macro_105	0	0.886	0.114	0	0	
+% 3	macro_106	0	0.998	0.002	0	0	
+% 3	macro_107	0	0.89	0.11	0	0	
+% 3	macro_108	0	0.938	0.062	0	0	
+% 3	macro_109	0	0.943	0.057	0	0	
+% 3	macro_110	0	0.953	0.047	0	0	
+% 3	macro_111	0	0.89	0.11	0	0	
+% 3	macro_112	0	0.908	0.092	0	0	
+% 3	macro_113	0	0.908	0.092	0	0	
+% 3	macro_114	0	0.901	0.099	0	0	
+% 3	macro_115	0	0.906	0.094	0	0	
+% 3	macro_116	0	0.639	0.361	0	0	
+% 3	macro_117	0.002	0.934	0.064	0	0	
+% 3	macro_118	0	0.641	0.359	0	0	
+% 3	macro_119	0	0.708	0.292	0	0	
+% 3	macro_120	0	0.712	0.286	0	0.002	
+% 3	macro_121	0	0.664	0.335	0	0	
+% 3	macro_122	0	0.68	0.32	0	0	
+% 3	macro_123	0	0.956	0.044	0	0	
+% 3	macro_124	0	0.944	0.056	0	0	
+% 4	muehl_8	0.957	0.04	0	0	0.002	
+% 4	muehl_9	1	0	0	0	0	
+% 4	muehl_10	0.985	0	0	0.015	0	
+% 4	muehl_11	1	0	0	0	0	
+% 4	muehl_12	0.967	0.002	0.031	0	0	
+% 4	muehl_13	1	0	0	0	0	
+% 4	muehl_14	0.137	0.862	0	0	0	
+% 4	muehl_15	0.613	0.387	0	0	0	
+% 4	muehl_16	1	0	0	0	0	
+% 4	muehl_17	0.995	0	0	0.005	0	
+% 4	muehl_18	1	0	0	0	0	
+% 4	muehl_19	1	0	0	0	0	
+% 1	alba_52	0.082	0.381	0.007	0.03	0.5	
+% 5	stell	0	0	0	1	0	
+% 3	macro_125	0	0.255	0.745	0	0	
+% 5	stell_1	0	0	0	1	0	
+% 5	stell_2	0	0	0	1	0	
+% 5	stell_3	0	0	0	1	0	
+% 5	stell_4	0	0	0	1	0	
+% 5	stell_5	0	0	0	1	0	
+% 5	stell_6	0	0	0	1	0	
+% 5	stell_7	0	0.124	0	0.876	0	
+% 5	stell_8	0	0	0.223	0.776	0	
+% 5	stell_9	0	0	0.257	0.742	0	
+% 5	stell_10	0	0	0	1	0	
+% 5	stell_11	0	0	0	1	0	
+% 5	stell_12	0	0	0	1	0	
+% 5	stell_13	0	0	0	1	0	
+% 1	alba_53	0	0.01	0	0	0.99	
+% 3	macro_126	0	0.853	0.147	0	0	
+% 3	macro_127	0	0.938	0.062	0	0	
+% 5	stell_14	0	0	0	1	0	
+% 1	alba_54	0	0.013	0.001	0	0.985	
+% 1	alba_55	0	0	0.009	0	0.99	
+% 1	alba_56	0.001	0	0	0	0.999	
+% 1	alba_57	0	0	0	0	1	
+% 1	alba_58	0	0.012	0	0	0.988	
+% 1	alba_59	0	0	0	0	1	
+% 1	alba_60	0	0	0	0	1	
+% 1	alba_61	0	0	0	0	1	
+% 1	alba_62	0	0	0	0	1	
+% 1	alba_63	0	0.037	0.011	0	0.951	
+% 1	alba_64	0	0	0	0	1	
+% 1	alba_65	0	0	0	0	1	
+% 1	alba_66	0	0	0	0	1	
+% 1	alba_67	0	0	0	0	1	
+% 1	alba_68	0	0	0	0	1	
+% 1	alba_69	0	0	0	0	1	
+% 2	bicol_6	0.069	0.787	0.054	0.064	0.026	
+% 3	macro_128	0	0.872	0.128	0	0	
+% 3	macro_129	0	0.982	0.018	0	0	
+% 3	macro_130	0	0.731	0.268	0	0	
+% 3	macro_131	0	0.845	0.155	0	0	
+% 3	macro_132	0.003	0.919	0.072	0	0.006	
+% 3	macro_133	0.028	0.89	0.025	0.018	0.039	
+% 3	macro_134	0.025	0.945	0.002	0.028	0.001	
+% 3	macro_135	0	0.862	0.138	0	0	
+% 3	macro_136	0.008	0.935	0.057	0	0	
+% 3	macro_137	0.001	0.88	0.119	0	0	
+% 3	macro_138	0.001	0.858	0.14	0	0	
+% 3	macro_139	0	0.815	0.185	0	0	
+% 3	macro_140	0	0.847	0.153	0	0	
+% 3	macro_141	0	0.792	0.208	0	0	
+% 3	macro_142	0	0.856	0.144	0	0	
+% 3	macro_143	0	0.826	0.174	0	0	
+% 3	macro_144	0	0.317	0.683	0	0	
+% 4	muehl_20	1	0	0	0	0	
+% 4	muehl_21	1	0	0	0	0	
+% 4	muehl_22	1	0	0	0	0	
+% 5	stell_15	0	0	0	1	0	
+% 5	stell_16	0	0	0	1	0	
+% 5	stell_17	0	0	0	1	0	
+
+
+% PARAMETERS
+50 150 translate 
+1 1 scale
+0 rotate
+/setrim {1 setlinewidth} def 
+/setsep {1 setlinewidth} def 
+/setind {0.2 setlinewidth} def 
+/fh {6} def    	% Font height 
+/da {5} def    	% Distance above box at which to print names 
+/db {-7} def    	% Distance below box at which to print names 
+/bh {72} def    	% Height of the box 
+/wi {1} def    	% Width of an individual 
+/aato {60} def  	% Angle at which to print text atop box 
+/abel {60} def  	% Angle at which to print text below box 
+/tot {263} def   	% Total number of individuals 
+/Helvetica-Bold findfont fh scalefont setfont 
+
+% ABBREVIATED COMMANDS
+/M {moveto} def
+/R {rmoveto} def
+/L {lineto} def
+/V {rlineto} def
+/Cfs {closepath fill stroke} def
+/rotshow {
+  dup dup stringwidth pop abel cos mul neg exch 
+  stringwidth pop abel sin mul neg R
+  gsave abel rotate show grestore
+} def
+/bhm {bh mul} def 	% Multiply by height of the box 
+/nwi {wi neg} def   	% Negative width of an individual 
+/wm {wi mul} def 	% Multiply by width of an individual 
+/ru {bhm M wi 0 V 0} def   	% Right-upwards box motion 
+/ld {bhm V nwi 0 V Cfs} def	% Left-downwards box closure motion
+/bbm {-.3 add 2 div add wm fh 2 div add db M} def       	% Below-box motion
+/abm {-.3 add 2 div add wm fh 2 div add bh da add M} def	% Above-box motion
+/sc {setrgbcolor} def
+
+% COLORS
+/c0 {0.0 0.0 0.0 sc} def    % black 
+/c1 {2.1 0.6 0.3 sc} def    % orange 
+/c2 {0 0.6 0.9 sc} def      % blue   
+/c3 {.9 2.1 0 sc} def       % yellow 
+/c4 {1.5 0.6 0.9 sc} def    % pink   
+/c5 {.2 .6 .2 sc} def       % green  
+/c6 {.5 0 .5 sc} def        % purple 
+/c7 {1.2 0.0 0.3 sc} def    % red     
+/c8 {0 1 0 sc} def          % light_green 
+/c9 {0 0 1 sc} def          % dark_blue 
+/c10 {1.2 0 1.8 sc} def     % light_purple 
+/c11 {1.5 0.9 0.6 sc} def   % light_yellow 
+/c12 {0.7 0.3 0.0 sc} def   % brown 
+/c13 {0 1.2 1.8 sc} def     % light_blue 
+/c14 {0.5 0.5 0.0 sc} def   % olive_green 
+/c15 {1.8 0.6 0.6 sc} def   % peach 
+/c16 {0 0.5 0.5 sc} def     % sea_green 
+/c17 {.6 .75 .15 sc} def    % yellow_green 
+/c18 {0.45 .15 .9 sc} def   % blue_purple  
+/c19 {0.15 0.75 0.6 sc} def % blue_green 
+/c20 {0.5 setgray} def      % gray 
+/c21 {0.05 0.4 0.05 sc} def % dark_green 
+/c22 {0.75 setgray} def     % light_gray 
+/c23 {1 0 0 sc} def         % red2 
+/c24 {0.6 0.9 1.5 sc} def   % light_blue2 
+/c25 {1 0.6 0.4 sc} def     % light_orange 
+/c26 {0.25 setgray} def     % dark_gray 
+/c27 {1.2 0.9 0.9 sc} def   % light_pink 
+/c28 {.6 .2 .2 sc} def      % dark_brown 
+/c29 {1.6 0.4 0 sc} def     % dark_orange 
+/c30 {0.2 0 0.3 sc} def     % dark_purple 
+/c31 {1 setgray} def        % white 
+/c32 {2.7 .3 0 sc} def      % color32 
+/c33 {2.4 .6 0 sc} def      % color33 
+/c34 {2.1 .3 .6 sc} def     % color34 
+/c35 {1.5 .6 .9 sc} def     % color35 
+/c36 {1.2 1.2 .6 sc} def    % color36 
+/c37 {1.2 1.2 .9 sc} def    % color37 
+/c38 {1.2 .9 .9 sc} def     % color38 
+/c39 {.9 1.8 .3 sc} def     % color39 
+/c40 {.9 .9 1.2 sc} def     % color40 
+/c41 {.9 .6 1.5 sc} def     % color41 
+/c42 {.6 2.1 .3 sc} def     % color42 
+/c43 {.6 1.8 .6 sc} def     % color43 
+/c44 {.6 1.5 .9 sc} def     % color44 
+/c45 {.6 1.2 1.2 sc} def    % color45 
+/c46 {.6 .9 1.5 sc} def     % color46 
+/c47 {.6 .6 1.8 sc} def     % color47 
+/c48 {.6 .3 2.1 sc} def     % color48 
+/c49 {.3 .6 2.1 sc} def     % color49 
+/c50 {0 2.4 .6 sc} def      % color50 
+/c51 {0 2.1 .9 sc} def      % color51 
+/c52 {0 .9 2.1 sc} def      % color52 
+/c53 {.8 .1 .1 sc} def      % color53 
+/c54 {.7 .3 0 sc} def       % color54 
+/c55 {.7 .2 .1 sc} def      % color55 
+/c56 {.7 .1 .2 sc} def      % color56 
+/c57 {.6 .4 0 sc} def       % color57 
+/c58 {.6 .3 .1 sc} def      % color58 
+/c59 {.3 .4 .3 sc} def      % color59 
+/c60 {.6 .1 .3 sc} def      % color60 
+/c61 {.5 .3 .2 sc} def      % color61 
+/c62 {.5 .2 .3 sc} def      % color62 
+/c63 {.5 .1 .4 sc} def      % color63 
+/c64 {.4 .3 .3 sc} def      % color64 
+/c65 {.4 .2 .4 sc} def      % color65 
+/c66 {1.2 .4 .4 sc} def     % color66 
+/c67 {1.2 .2 .6 sc} def     % color67 
+/c68 {1 .8 .2 sc} def       % color68 
+/c69 {1 .6 .4 sc} def       % color69 
+/c70 {1 .4 .6 sc} def       % color70 
+/c100 {0.996094 0.996094 0.996094 sc} def   % color100 
+/c101 {0.996094 0.695312 0.695312 sc} def   % color101 
+/c102 {0.894531 0.492188 0.492188 sc} def   % color102 
+/c103 {0.796875 0.316406 0.316406 sc} def   % color103 
+/c104 {0.695312 0.171875 0.171875 sc} def   % color104 
+/c105 {0.597656 0.0585938 0.0585938 sc} def % color105 
+/c106 {0.894531 0.84375 0.695312 sc} def    % color106 
+/c107 {0.761719 0.691406 0.492188 sc} def   % color107 
+/c108 {0.636719 0.554688 0.316406 sc} def   % color108 
+/c109 {0.519531 0.433594 0.171875 sc} def   % color109 
+/c110 {0.417969 0.328125 0.0585938 sc} def  % color110 
+/c111 {0.894531 0.996094 0.695312 sc} def   % color111 
+/c112 {0.761719 0.894531 0.492188 sc} def   % color112 
+/c113 {0.636719 0.796875 0.316406 sc} def   % color113 
+/c114 {0.519531 0.695312 0.171875 sc} def   % color114 
+/c115 {0.417969 0.597656 0.0585938 sc} def  % color115 
+/c116 {0.695312 0.894531 0.996094 sc} def   % color116 
+/c117 {0.492188 0.761719 0.894531 sc} def   % color117 
+/c118 {0.316406 0.636719 0.796875 sc} def   % color118 
+/c119 {0.171875 0.519531 0.695312 sc} def   % color119 
+/c120 {0.0585938 0.417969 0.597656 sc} def  % color120 
+/c121 {0.746094 0.695312 0.996094 sc} def   % color121 
+/c122 {0.558594 0.492188 0.894531 sc} def   % color122 
+/c123 {0.394531 0.316406 0.796875 sc} def   % color123 
+/c124 {0.257812 0.171875 0.695312 sc} def   % color124 
+/c125 {0.148438 0.0585938 0.597656 sc} def  % color125 
+/c126 {0.996094 0.996094 0.597656 sc} def   % color126 
+/c127 {0.996094 0.996094 0 sc} def          % color127 
+/c128 {0.996094 0.796875 0 sc} def          % color128 
+/c129 {0.996094 0.597656 0 sc} def          % color129 
+/c130 {0.996094 0.398438 0 sc} def          % color130 
+/d1 {c7} def
+/d2 {c5} def
+/d3 {c6} def
+/d4 {c4} def
+/d5 {c3} def
+
+% FIGURE OUTLINE
+setrim 0 0 M wi tot mul 0 V 0 bh V nwi tot mul 0 V closepath stroke
+
+% TITLE
+%0 3 bhm M (hybseq.v3.2018-10-10_f.popq) show
+
+% STRUCTURE RESULTS
+setind
+d1 0 wm 0 ru 0.151 ld
+d2 0 wm 0.151 ru 0.714 ld
+d3 0 wm 0.865 ru 0.002 ld
+d4 0 wm 0.867 ru 0.085 ld
+d5 0 wm 0.952 ru 0.048 ld
+d1 1 wm 0 ru 0.13 ld
+d2 1 wm 0.13 ru 0.691 ld
+d3 1 wm 0.821 ru 0.003 ld
+d4 1 wm 0.824 ru 0.111 ld
+d5 1 wm 0.935 ru 0.065 ld
+d1 2 wm 0 ru 0.121121 ld
+d2 2 wm 0.121121 ru 0.682683 ld
+d3 2 wm 0.803804 ru 0.016016 ld
+d4 2 wm 0.81982 ru 0.114114 ld
+d5 2 wm 0.933934 ru 0.0660661 ld
+d1 3 wm 0 ru 0.137862 ld
+d2 3 wm 0.137862 ru 0.648352 ld
+d3 3 wm 0.786214 ru 0.0679321 ld
+d4 3 wm 0.854146 ru 0.112887 ld
+d5 3 wm 0.967033 ru 0.032967 ld
+d1 4 wm 0 ru 0.032032 ld
+d2 4 wm 0.032032 ru 0.858859 ld
+d3 4 wm 0.890891 ru 0.109109 ld
+d4 4 wm 1 ru 0 ld
+d5 4 wm 1 ru 0 ld
+d1 5 wm 0 ru 0.101 ld
+d2 5 wm 0.101 ru 0.641 ld
+d3 5 wm 0.742 ru 0.088 ld
+d4 5 wm 0.83 ru 0.116 ld
+d5 5 wm 0.946 ru 0.054 ld
+d1 6 wm 0 ru 0.069 ld
+d2 6 wm 0.069 ru 0.787 ld
+d3 6 wm 0.856 ru 0.054 ld
+d4 6 wm 0.91 ru 0.064 ld
+d5 6 wm 0.974 ru 0.026 ld
+setsep c0 0 wm 0 M 0 bh V stroke
+%atop c0 0 7 abm gsave aato rotate (2) show grestore
+c0 0 7 bbm (bicolor) rotshow
+setind
+d1 7 wm 0 ru 0 ld
+d2 7 wm 0 ru 0 ld
+d3 7 wm 0 ru 0 ld
+d4 7 wm 0 ru 1 ld
+d5 7 wm 1 ru 0 ld
+d1 8 wm 0 ru 0 ld
+d2 8 wm 0 ru 0 ld
+d3 8 wm 0 ru 0 ld
+d4 8 wm 0 ru 1 ld
+d5 8 wm 1 ru 0 ld
+d1 9 wm 0 ru 0 ld
+d2 9 wm 0 ru 0 ld
+d3 9 wm 0 ru 0 ld
+d4 9 wm 0 ru 1 ld
+d5 9 wm 1 ru 0 ld
+d1 10 wm 0 ru 0 ld
+d2 10 wm 0 ru 0 ld
+d3 10 wm 0 ru 0 ld
+d4 10 wm 0 ru 1 ld
+d5 10 wm 1 ru 0 ld
+d1 11 wm 0 ru 0 ld
+d2 11 wm 0 ru 0 ld
+d3 11 wm 0 ru 0 ld
+d4 11 wm 0 ru 1 ld
+d5 11 wm 1 ru 0 ld
+d1 12 wm 0 ru 0 ld
+d2 12 wm 0 ru 0 ld
+d3 12 wm 0 ru 0 ld
+d4 12 wm 0 ru 1 ld
+d5 12 wm 1 ru 0 ld
+d1 13 wm 0 ru 0 ld
+d2 13 wm 0 ru 0 ld
+d3 13 wm 0 ru 0 ld
+d4 13 wm 0 ru 1 ld
+d5 13 wm 1 ru 0 ld
+d1 14 wm 0 ru 0 ld
+d2 14 wm 0 ru 0.124 ld
+d3 14 wm 0.124 ru 0 ld
+d4 14 wm 0.124 ru 0.876 ld
+d5 14 wm 1 ru 0 ld
+d1 15 wm 0 ru 0 ld
+d2 15 wm 0 ru 0 ld
+d3 15 wm 0 ru 0.223223 ld
+d4 15 wm 0.223223 ru 0.776777 ld
+d5 15 wm 1 ru 0 ld
+d1 16 wm 0 ru 0 ld
+d2 16 wm 0 ru 0 ld
+d3 16 wm 0 ru 0.257257 ld
+d4 16 wm 0.257257 ru 0.742743 ld
+d5 16 wm 1 ru 0 ld
+d1 17 wm 0 ru 0 ld
+d2 17 wm 0 ru 0 ld
+d3 17 wm 0 ru 0 ld
+d4 17 wm 0 ru 1 ld
+d5 17 wm 1 ru 0 ld
+d1 18 wm 0 ru 0 ld
+d2 18 wm 0 ru 0 ld
+d3 18 wm 0 ru 0 ld
+d4 18 wm 0 ru 1 ld
+d5 18 wm 1 ru 0 ld
+d1 19 wm 0 ru 0 ld
+d2 19 wm 0 ru 0 ld
+d3 19 wm 0 ru 0 ld
+d4 19 wm 0 ru 1 ld
+d5 19 wm 1 ru 0 ld
+d1 20 wm 0 ru 0 ld
+d2 20 wm 0 ru 0 ld
+d3 20 wm 0 ru 0 ld
+d4 20 wm 0 ru 1 ld
+d5 20 wm 1 ru 0 ld
+d1 21 wm 0 ru 0 ld
+d2 21 wm 0 ru 0 ld
+d3 21 wm 0 ru 0 ld
+d4 21 wm 0 ru 1 ld
+d5 21 wm 1 ru 0 ld
+d1 22 wm 0 ru 0 ld
+d2 22 wm 0 ru 0 ld
+d3 22 wm 0 ru 0 ld
+d4 22 wm 0 ru 1 ld
+d5 22 wm 1 ru 0 ld
+d1 23 wm 0 ru 0 ld
+d2 23 wm 0 ru 0 ld
+d3 23 wm 0 ru 0 ld
+d4 23 wm 0 ru 1 ld
+d5 23 wm 1 ru 0 ld
+d1 24 wm 0 ru 0 ld
+d2 24 wm 0 ru 0 ld
+d3 24 wm 0 ru 0 ld
+d4 24 wm 0 ru 1 ld
+d5 24 wm 1 ru 0 ld
+setsep c0 7 wm 0 M 0 bh V stroke
+%atop c0 7 18 abm gsave aato rotate (5) show grestore
+c0 7 18 bbm (stellata) rotshow
+setind
+d1 25 wm 0 ru 1 ld
+d2 25 wm 1 ru 0 ld
+d3 25 wm 1 ru 0 ld
+d4 25 wm 1 ru 0 ld
+d5 25 wm 1 ru 0 ld
+d1 26 wm 0 ru 1 ld
+d2 26 wm 1 ru 0 ld
+d3 26 wm 1 ru 0 ld
+d4 26 wm 1 ru 0 ld
+d5 26 wm 1 ru 0 ld
+d1 27 wm 0 ru 1 ld
+d2 27 wm 1 ru 0 ld
+d3 27 wm 1 ru 0 ld
+d4 27 wm 1 ru 0 ld
+d5 27 wm 1 ru 0 ld
+d1 28 wm 0 ru 1 ld
+d2 28 wm 1 ru 0 ld
+d3 28 wm 1 ru 0 ld
+d4 28 wm 1 ru 0 ld
+d5 28 wm 1 ru 0 ld
+d1 29 wm 0 ru 1 ld
+d2 29 wm 1 ru 0 ld
+d3 29 wm 1 ru 0 ld
+d4 29 wm 1 ru 0 ld
+d5 29 wm 1 ru 0 ld
+d1 30 wm 0 ru 1 ld
+d2 30 wm 1 ru 0 ld
+d3 30 wm 1 ru 0 ld
+d4 30 wm 1 ru 0 ld
+d5 30 wm 1 ru 0 ld
+d1 31 wm 0 ru 1 ld
+d2 31 wm 1 ru 0 ld
+d3 31 wm 1 ru 0 ld
+d4 31 wm 1 ru 0 ld
+d5 31 wm 1 ru 0 ld
+d1 32 wm 0 ru 1 ld
+d2 32 wm 1 ru 0 ld
+d3 32 wm 1 ru 0 ld
+d4 32 wm 1 ru 0 ld
+d5 32 wm 1 ru 0 ld
+d1 33 wm 0 ru 0.957958 ld
+d2 33 wm 0.957958 ru 0.04004 ld
+d3 33 wm 0.997998 ru 0 ld
+d4 33 wm 0.997998 ru 0 ld
+d5 33 wm 0.997998 ru 0.002002 ld
+d1 34 wm 0 ru 1 ld
+d2 34 wm 1 ru 0 ld
+d3 34 wm 1 ru 0 ld
+d4 34 wm 1 ru 0 ld
+d5 34 wm 1 ru 0 ld
+d1 35 wm 0 ru 0.985 ld
+d2 35 wm 0.985 ru 0 ld
+d3 35 wm 0.985 ru 0 ld
+d4 35 wm 0.985 ru 0.015 ld
+d5 35 wm 1 ru 0 ld
+d1 36 wm 0 ru 1 ld
+d2 36 wm 1 ru 0 ld
+d3 36 wm 1 ru 0 ld
+d4 36 wm 1 ru 0 ld
+d5 36 wm 1 ru 0 ld
+d1 37 wm 0 ru 0.967 ld
+d2 37 wm 0.967 ru 0.002 ld
+d3 37 wm 0.969 ru 0.031 ld
+d4 37 wm 1 ru 0 ld
+d5 37 wm 1 ru 0 ld
+d1 38 wm 0 ru 1 ld
+d2 38 wm 1 ru 0 ld
+d3 38 wm 1 ru 0 ld
+d4 38 wm 1 ru 0 ld
+d5 38 wm 1 ru 0 ld
+d1 39 wm 0 ru 0.137137 ld
+d2 39 wm 0.137137 ru 0.862863 ld
+d3 39 wm 1 ru 0 ld
+d4 39 wm 1 ru 0 ld
+d5 39 wm 1 ru 0 ld
+d1 40 wm 0 ru 0.613 ld
+d2 40 wm 0.613 ru 0.387 ld
+d3 40 wm 1 ru 0 ld
+d4 40 wm 1 ru 0 ld
+d5 40 wm 1 ru 0 ld
+d1 41 wm 0 ru 1 ld
+d2 41 wm 1 ru 0 ld
+d3 41 wm 1 ru 0 ld
+d4 41 wm 1 ru 0 ld
+d5 41 wm 1 ru 0 ld
+d1 42 wm 0 ru 0.995 ld
+d2 42 wm 0.995 ru 0 ld
+d3 42 wm 0.995 ru 0 ld
+d4 42 wm 0.995 ru 0.005 ld
+d5 42 wm 1 ru 0 ld
+d1 43 wm 0 ru 1 ld
+d2 43 wm 1 ru 0 ld
+d3 43 wm 1 ru 0 ld
+d4 43 wm 1 ru 0 ld
+d5 43 wm 1 ru 0 ld
+d1 44 wm 0 ru 1 ld
+d2 44 wm 1 ru 0 ld
+d3 44 wm 1 ru 0 ld
+d4 44 wm 1 ru 0 ld
+d5 44 wm 1 ru 0 ld
+d1 45 wm 0 ru 1 ld
+d2 45 wm 1 ru 0 ld
+d3 45 wm 1 ru 0 ld
+d4 45 wm 1 ru 0 ld
+d5 45 wm 1 ru 0 ld
+d1 46 wm 0 ru 1 ld
+d2 46 wm 1 ru 0 ld
+d3 46 wm 1 ru 0 ld
+d4 46 wm 1 ru 0 ld
+d5 46 wm 1 ru 0 ld
+d1 47 wm 0 ru 1 ld
+d2 47 wm 1 ru 0 ld
+d3 47 wm 1 ru 0 ld
+d4 47 wm 1 ru 0 ld
+d5 47 wm 1 ru 0 ld
+setsep c0 25 wm 0 M 0 bh V stroke
+%atop c0 25 23 abm gsave aato rotate (4) show grestore
+c0 25 23 bbm (muehlenbergii) rotshow
+setind
+d1 48 wm 0 ru 0 ld
+d2 48 wm 0 ru 0 ld
+d3 48 wm 0 ru 0 ld
+d4 48 wm 0 ru 0 ld
+d5 48 wm 0 ru 1 ld
+d1 49 wm 0 ru 0 ld
+d2 49 wm 0 ru 0 ld
+d3 49 wm 0 ru 0 ld
+d4 49 wm 0 ru 0 ld
+d5 49 wm 0 ru 1 ld
+d1 50 wm 0 ru 0 ld
+d2 50 wm 0 ru 0 ld
+d3 50 wm 0 ru 0 ld
+d4 50 wm 0 ru 0 ld
+d5 50 wm 0 ru 1 ld
+d1 51 wm 0 ru 0 ld
+d2 51 wm 0 ru 0.002002 ld
+d3 51 wm 0.002002 ru 0.001001 ld
+d4 51 wm 0.003003 ru 0 ld
+d5 51 wm 0.003003 ru 0.996997 ld
+d1 52 wm 0 ru 0 ld
+d2 52 wm 0 ru 0 ld
+d3 52 wm 0 ru 0 ld
+d4 52 wm 0 ru 0 ld
+d5 52 wm 0 ru 1 ld
+d1 53 wm 0 ru 0 ld
+d2 53 wm 0 ru 0 ld
+d3 53 wm 0 ru 0 ld
+d4 53 wm 0 ru 0 ld
+d5 53 wm 0 ru 1 ld
+d1 54 wm 0 ru 0 ld
+d2 54 wm 0 ru 0 ld
+d3 54 wm 0 ru 0 ld
+d4 54 wm 0 ru 0 ld
+d5 54 wm 0 ru 1 ld
+d1 55 wm 0 ru 0 ld
+d2 55 wm 0 ru 0 ld
+d3 55 wm 0 ru 0 ld
+d4 55 wm 0 ru 0 ld
+d5 55 wm 0 ru 1 ld
+d1 56 wm 0 ru 0 ld
+d2 56 wm 0 ru 0 ld
+d3 56 wm 0 ru 0 ld
+d4 56 wm 0 ru 0 ld
+d5 56 wm 0 ru 1 ld
+d1 57 wm 0 ru 0.029 ld
+d2 57 wm 0.029 ru 0.314 ld
+d3 57 wm 0.343 ru 0.05 ld
+d4 57 wm 0.393 ru 0.012 ld
+d5 57 wm 0.405 ru 0.595 ld
+d1 58 wm 0 ru 0 ld
+d2 58 wm 0 ru 0 ld
+d3 58 wm 0 ru 0 ld
+d4 58 wm 0 ru 0 ld
+d5 58 wm 0 ru 1 ld
+d1 59 wm 0 ru 0 ld
+d2 59 wm 0 ru 0 ld
+d3 59 wm 0 ru 0 ld
+d4 59 wm 0 ru 0 ld
+d5 59 wm 0 ru 1 ld
+d1 60 wm 0 ru 0 ld
+d2 60 wm 0 ru 0 ld
+d3 60 wm 0 ru 0 ld
+d4 60 wm 0 ru 0 ld
+d5 60 wm 0 ru 1 ld
+d1 61 wm 0 ru 0 ld
+d2 61 wm 0 ru 0.019 ld
+d3 61 wm 0.019 ru 0 ld
+d4 61 wm 0.019 ru 0 ld
+d5 61 wm 0.019 ru 0.981 ld
+d1 62 wm 0 ru 0 ld
+d2 62 wm 0 ru 0 ld
+d3 62 wm 0 ru 0 ld
+d4 62 wm 0 ru 0 ld
+d5 62 wm 0 ru 1 ld
+d1 63 wm 0 ru 0 ld
+d2 63 wm 0 ru 0 ld
+d3 63 wm 0 ru 0 ld
+d4 63 wm 0 ru 0 ld
+d5 63 wm 0 ru 1 ld
+d1 64 wm 0 ru 0 ld
+d2 64 wm 0 ru 0 ld
+d3 64 wm 0 ru 0 ld
+d4 64 wm 0 ru 0 ld
+d5 64 wm 0 ru 1 ld
+d1 65 wm 0 ru 0 ld
+d2 65 wm 0 ru 0 ld
+d3 65 wm 0 ru 0 ld
+d4 65 wm 0 ru 0 ld
+d5 65 wm 0 ru 1 ld
+d1 66 wm 0 ru 0 ld
+d2 66 wm 0 ru 0 ld
+d3 66 wm 0 ru 0 ld
+d4 66 wm 0 ru 0 ld
+d5 66 wm 0 ru 1 ld
+d1 67 wm 0 ru 0 ld
+d2 67 wm 0 ru 0.47 ld
+d3 67 wm 0.47 ru 0.002 ld
+d4 67 wm 0.472 ru 0 ld
+d5 67 wm 0.472 ru 0.528 ld
+d1 68 wm 0 ru 0 ld
+d2 68 wm 0 ru 0.05 ld
+d3 68 wm 0.05 ru 0.287 ld
+d4 68 wm 0.337 ru 0 ld
+d5 68 wm 0.337 ru 0.663 ld
+d1 69 wm 0 ru 0 ld
+d2 69 wm 0 ru 0.222222 ld
+d3 69 wm 0.222222 ru 0.411411 ld
+d4 69 wm 0.633634 ru 0 ld
+d5 69 wm 0.633634 ru 0.366366 ld
+d1 70 wm 0 ru 0 ld
+d2 70 wm 0 ru 0.494 ld
+d3 70 wm 0.494 ru 0.506 ld
+d4 70 wm 1 ru 0 ld
+d5 70 wm 1 ru 0 ld
+d1 71 wm 0 ru 0 ld
+d2 71 wm 0 ru 0 ld
+d3 71 wm 0 ru 0 ld
+d4 71 wm 0 ru 0 ld
+d5 71 wm 0 ru 1 ld
+d1 72 wm 0 ru 0 ld
+d2 72 wm 0 ru 0.407 ld
+d3 72 wm 0.407 ru 0.068 ld
+d4 72 wm 0.475 ru 0 ld
+d5 72 wm 0.475 ru 0.525 ld
+d1 73 wm 0 ru 0 ld
+d2 73 wm 0 ru 0.36963 ld
+d3 73 wm 0.36963 ru 0.01998 ld
+d4 73 wm 0.38961 ru 0.000999001 ld
+d5 73 wm 0.390609 ru 0.609391 ld
+d1 74 wm 0 ru 0 ld
+d2 74 wm 0 ru 0 ld
+d3 74 wm 0 ru 0 ld
+d4 74 wm 0 ru 0 ld
+d5 74 wm 0 ru 1 ld
+d1 75 wm 0 ru 0 ld
+d2 75 wm 0 ru 0 ld
+d3 75 wm 0 ru 0 ld
+d4 75 wm 0 ru 0 ld
+d5 75 wm 0 ru 1 ld
+d1 76 wm 0 ru 0 ld
+d2 76 wm 0 ru 0 ld
+d3 76 wm 0 ru 0 ld
+d4 76 wm 0 ru 0 ld
+d5 76 wm 0 ru 1 ld
+d1 77 wm 0 ru 0 ld
+d2 77 wm 0 ru 0 ld
+d3 77 wm 0 ru 0 ld
+d4 77 wm 0 ru 0 ld
+d5 77 wm 0 ru 1 ld
+d1 78 wm 0 ru 0 ld
+d2 78 wm 0 ru 0 ld
+d3 78 wm 0 ru 0 ld
+d4 78 wm 0 ru 0 ld
+d5 78 wm 0 ru 1 ld
+d1 79 wm 0 ru 0 ld
+d2 79 wm 0 ru 0 ld
+d3 79 wm 0 ru 0 ld
+d4 79 wm 0 ru 0 ld
+d5 79 wm 0 ru 1 ld
+d1 80 wm 0 ru 0 ld
+d2 80 wm 0 ru 0 ld
+d3 80 wm 0 ru 0 ld
+d4 80 wm 0 ru 0 ld
+d5 80 wm 0 ru 1 ld
+d1 81 wm 0 ru 0 ld
+d2 81 wm 0 ru 0 ld
+d3 81 wm 0 ru 0 ld
+d4 81 wm 0 ru 0 ld
+d5 81 wm 0 ru 1 ld
+d1 82 wm 0 ru 0 ld
+d2 82 wm 0 ru 0 ld
+d3 82 wm 0 ru 0 ld
+d4 82 wm 0 ru 0 ld
+d5 82 wm 0 ru 1 ld
+d1 83 wm 0 ru 0 ld
+d2 83 wm 0 ru 0 ld
+d3 83 wm 0 ru 0 ld
+d4 83 wm 0 ru 0 ld
+d5 83 wm 0 ru 1 ld
+d1 84 wm 0 ru 0 ld
+d2 84 wm 0 ru 0 ld
+d3 84 wm 0 ru 0 ld
+d4 84 wm 0 ru 0 ld
+d5 84 wm 0 ru 1 ld
+d1 85 wm 0 ru 0 ld
+d2 85 wm 0 ru 0 ld
+d3 85 wm 0 ru 0 ld
+d4 85 wm 0 ru 0 ld
+d5 85 wm 0 ru 1 ld
+d1 86 wm 0 ru 0 ld
+d2 86 wm 0 ru 0 ld
+d3 86 wm 0 ru 0 ld
+d4 86 wm 0 ru 0 ld
+d5 86 wm 0 ru 1 ld
+d1 87 wm 0 ru 0 ld
+d2 87 wm 0 ru 0.004 ld
+d3 87 wm 0.004 ru 0.003 ld
+d4 87 wm 0.007 ru 0 ld
+d5 87 wm 0.007 ru 0.993 ld
+d1 88 wm 0 ru 0 ld
+d2 88 wm 0 ru 0.489 ld
+d3 88 wm 0.489 ru 0.034 ld
+d4 88 wm 0.523 ru 0 ld
+d5 88 wm 0.523 ru 0.477 ld
+d1 89 wm 0 ru 0 ld
+d2 89 wm 0 ru 0 ld
+d3 89 wm 0 ru 0.001 ld
+d4 89 wm 0.001 ru 0 ld
+d5 89 wm 0.001 ru 0.999 ld
+d1 90 wm 0 ru 0 ld
+d2 90 wm 0 ru 0.018 ld
+d3 90 wm 0.018 ru 0 ld
+d4 90 wm 0.018 ru 0 ld
+d5 90 wm 0.018 ru 0.982 ld
+d1 91 wm 0 ru 0 ld
+d2 91 wm 0 ru 0 ld
+d3 91 wm 0 ru 0 ld
+d4 91 wm 0 ru 0 ld
+d5 91 wm 0 ru 1 ld
+d1 92 wm 0 ru 0 ld
+d2 92 wm 0 ru 0 ld
+d3 92 wm 0 ru 0 ld
+d4 92 wm 0 ru 0 ld
+d5 92 wm 0 ru 1 ld
+d1 93 wm 0 ru 0.104 ld
+d2 93 wm 0.104 ru 0 ld
+d3 93 wm 0.104 ru 0 ld
+d4 93 wm 0.104 ru 0 ld
+d5 93 wm 0.104 ru 0.896 ld
+d1 94 wm 0 ru 0.094 ld
+d2 94 wm 0.094 ru 0 ld
+d3 94 wm 0.094 ru 0 ld
+d4 94 wm 0.094 ru 0 ld
+d5 94 wm 0.094 ru 0.906 ld
+d1 95 wm 0 ru 0 ld
+d2 95 wm 0 ru 0.008 ld
+d3 95 wm 0.008 ru 0 ld
+d4 95 wm 0.008 ru 0 ld
+d5 95 wm 0.008 ru 0.992 ld
+d1 96 wm 0 ru 0 ld
+d2 96 wm 0 ru 0 ld
+d3 96 wm 0 ru 0 ld
+d4 96 wm 0 ru 0 ld
+d5 96 wm 0 ru 1 ld
+d1 97 wm 0 ru 0 ld
+d2 97 wm 0 ru 0 ld
+d3 97 wm 0 ru 0 ld
+d4 97 wm 0 ru 0 ld
+d5 97 wm 0 ru 1 ld
+d1 98 wm 0 ru 0 ld
+d2 98 wm 0 ru 0 ld
+d3 98 wm 0 ru 0 ld
+d4 98 wm 0 ru 0 ld
+d5 98 wm 0 ru 1 ld
+d1 99 wm 0 ru 0 ld
+d2 99 wm 0 ru 0 ld
+d3 99 wm 0 ru 0 ld
+d4 99 wm 0 ru 0 ld
+d5 99 wm 0 ru 1 ld
+d1 100 wm 0 ru 0.082 ld
+d2 100 wm 0.082 ru 0.381 ld
+d3 100 wm 0.463 ru 0.007 ld
+d4 100 wm 0.47 ru 0.03 ld
+d5 100 wm 0.5 ru 0.5 ld
+d1 101 wm 0 ru 0 ld
+d2 101 wm 0 ru 0.01 ld
+d3 101 wm 0.01 ru 0 ld
+d4 101 wm 0.01 ru 0 ld
+d5 101 wm 0.01 ru 0.99 ld
+d1 102 wm 0 ru 0 ld
+d2 102 wm 0 ru 0.013013 ld
+d3 102 wm 0.013013 ru 0.001001 ld
+d4 102 wm 0.014014 ru 0 ld
+d5 102 wm 0.014014 ru 0.985986 ld
+d1 103 wm 0 ru 0 ld
+d2 103 wm 0 ru 0 ld
+d3 103 wm 0 ru 0.00900901 ld
+d4 103 wm 0.00900901 ru 0 ld
+d5 103 wm 0.00900901 ru 0.990991 ld
+d1 104 wm 0 ru 0.001 ld
+d2 104 wm 0.001 ru 0 ld
+d3 104 wm 0.001 ru 0 ld
+d4 104 wm 0.001 ru 0 ld
+d5 104 wm 0.001 ru 0.999 ld
+d1 105 wm 0 ru 0 ld
+d2 105 wm 0 ru 0 ld
+d3 105 wm 0 ru 0 ld
+d4 105 wm 0 ru 0 ld
+d5 105 wm 0 ru 1 ld
+d1 106 wm 0 ru 0 ld
+d2 106 wm 0 ru 0.012 ld
+d3 106 wm 0.012 ru 0 ld
+d4 106 wm 0.012 ru 0 ld
+d5 106 wm 0.012 ru 0.988 ld
+d1 107 wm 0 ru 0 ld
+d2 107 wm 0 ru 0 ld
+d3 107 wm 0 ru 0 ld
+d4 107 wm 0 ru 0 ld
+d5 107 wm 0 ru 1 ld
+d1 108 wm 0 ru 0 ld
+d2 108 wm 0 ru 0 ld
+d3 108 wm 0 ru 0 ld
+d4 108 wm 0 ru 0 ld
+d5 108 wm 0 ru 1 ld
+d1 109 wm 0 ru 0 ld
+d2 109 wm 0 ru 0 ld
+d3 109 wm 0 ru 0 ld
+d4 109 wm 0 ru 0 ld
+d5 109 wm 0 ru 1 ld
+d1 110 wm 0 ru 0 ld
+d2 110 wm 0 ru 0 ld
+d3 110 wm 0 ru 0 ld
+d4 110 wm 0 ru 0 ld
+d5 110 wm 0 ru 1 ld
+d1 111 wm 0 ru 0 ld
+d2 111 wm 0 ru 0.037037 ld
+d3 111 wm 0.037037 ru 0.011011 ld
+d4 111 wm 0.048048 ru 0 ld
+d5 111 wm 0.048048 ru 0.951952 ld
+d1 112 wm 0 ru 0 ld
+d2 112 wm 0 ru 0 ld
+d3 112 wm 0 ru 0 ld
+d4 112 wm 0 ru 0 ld
+d5 112 wm 0 ru 1 ld
+d1 113 wm 0 ru 0 ld
+d2 113 wm 0 ru 0 ld
+d3 113 wm 0 ru 0 ld
+d4 113 wm 0 ru 0 ld
+d5 113 wm 0 ru 1 ld
+d1 114 wm 0 ru 0 ld
+d2 114 wm 0 ru 0 ld
+d3 114 wm 0 ru 0 ld
+d4 114 wm 0 ru 0 ld
+d5 114 wm 0 ru 1 ld
+d1 115 wm 0 ru 0 ld
+d2 115 wm 0 ru 0 ld
+d3 115 wm 0 ru 0 ld
+d4 115 wm 0 ru 0 ld
+d5 115 wm 0 ru 1 ld
+d1 116 wm 0 ru 0 ld
+d2 116 wm 0 ru 0 ld
+d3 116 wm 0 ru 0 ld
+d4 116 wm 0 ru 0 ld
+d5 116 wm 0 ru 1 ld
+d1 117 wm 0 ru 0 ld
+d2 117 wm 0 ru 0 ld
+d3 117 wm 0 ru 0 ld
+d4 117 wm 0 ru 0 ld
+d5 117 wm 0 ru 1 ld
+setsep c0 48 wm 0 M 0 bh V stroke
+%atop c0 48 70 abm gsave aato rotate (1) show grestore
+c0 48 70 bbm (alba) rotshow
+setind
+d1 118 wm 0 ru 0 ld
+d2 118 wm 0 ru 0.407 ld
+d3 118 wm 0.407 ru 0.593 ld
+d4 118 wm 1 ru 0 ld
+d5 118 wm 1 ru 0 ld
+d1 119 wm 0 ru 0 ld
+d2 119 wm 0 ru 0.32 ld
+d3 119 wm 0.32 ru 0.68 ld
+d4 119 wm 1 ru 0 ld
+d5 119 wm 1 ru 0 ld
+d1 120 wm 0 ru 0 ld
+d2 120 wm 0 ru 0.794 ld
+d3 120 wm 0.794 ru 0.041 ld
+d4 120 wm 0.835 ru 0 ld
+d5 120 wm 0.835 ru 0.165 ld
+d1 121 wm 0 ru 0.024975 ld
+d2 121 wm 0.024975 ru 0.462537 ld
+d3 121 wm 0.487512 ru 0.497502 ld
+d4 121 wm 0.985015 ru 0.014985 ld
+d5 121 wm 1 ru 0 ld
+d1 122 wm 0 ru 0 ld
+d2 122 wm 0 ru 0.878879 ld
+d3 122 wm 0.878879 ru 0.121121 ld
+d4 122 wm 1 ru 0 ld
+d5 122 wm 1 ru 0 ld
+d1 123 wm 0 ru 0 ld
+d2 123 wm 0 ru 0.828 ld
+d3 123 wm 0.828 ru 0.172 ld
+d4 123 wm 1 ru 0 ld
+d5 123 wm 1 ru 0 ld
+d1 124 wm 0 ru 0.00699301 ld
+d2 124 wm 0.00699301 ru 0.316683 ld
+d3 124 wm 0.323676 ru 0.674326 ld
+d4 124 wm 0.998002 ru 0.000999001 ld
+d5 124 wm 0.999001 ru 0.000999001 ld
+d1 125 wm 0 ru 0 ld
+d2 125 wm 0 ru 0.194 ld
+d3 125 wm 0.194 ru 0.806 ld
+d4 125 wm 1 ru 0 ld
+d5 125 wm 1 ru 0 ld
+d1 126 wm 0 ru 0 ld
+d2 126 wm 0 ru 0.238 ld
+d3 126 wm 0.238 ru 0.762 ld
+d4 126 wm 1 ru 0 ld
+d5 126 wm 1 ru 0 ld
+d1 127 wm 0 ru 0 ld
+d2 127 wm 0 ru 0.883 ld
+d3 127 wm 0.883 ru 0.117 ld
+d4 127 wm 1 ru 0 ld
+d5 127 wm 1 ru 0 ld
+d1 128 wm 0 ru 0.003003 ld
+d2 128 wm 0.003003 ru 0.0500501 ld
+d3 128 wm 0.0530531 ru 0.930931 ld
+d4 128 wm 0.983984 ru 0.016016 ld
+d5 128 wm 1 ru 0 ld
+d1 129 wm 0 ru 0 ld
+d2 129 wm 0 ru 0.327 ld
+d3 129 wm 0.327 ru 0.673 ld
+d4 129 wm 1 ru 0 ld
+d5 129 wm 1 ru 0 ld
+d1 130 wm 0 ru 0 ld
+d2 130 wm 0 ru 0.854 ld
+d3 130 wm 0.854 ru 0.146 ld
+d4 130 wm 1 ru 0 ld
+d5 130 wm 1 ru 0 ld
+d1 131 wm 0 ru 0 ld
+d2 131 wm 0 ru 0.618 ld
+d3 131 wm 0.618 ru 0.382 ld
+d4 131 wm 1 ru 0 ld
+d5 131 wm 1 ru 0 ld
+d1 132 wm 0 ru 0 ld
+d2 132 wm 0 ru 0.957 ld
+d3 132 wm 0.957 ru 0.043 ld
+d4 132 wm 1 ru 0 ld
+d5 132 wm 1 ru 0 ld
+d1 133 wm 0 ru 0 ld
+d2 133 wm 0 ru 0.193 ld
+d3 133 wm 0.193 ru 0.807 ld
+d4 133 wm 1 ru 0 ld
+d5 133 wm 1 ru 0 ld
+d1 134 wm 0 ru 0 ld
+d2 134 wm 0 ru 0.346 ld
+d3 134 wm 0.346 ru 0.654 ld
+d4 134 wm 1 ru 0 ld
+d5 134 wm 1 ru 0 ld
+d1 135 wm 0 ru 0 ld
+d2 135 wm 0 ru 0.821 ld
+d3 135 wm 0.821 ru 0.153 ld
+d4 135 wm 0.974 ru 0 ld
+d5 135 wm 0.974 ru 0.026 ld
+d1 136 wm 0 ru 0 ld
+d2 136 wm 0 ru 0.931932 ld
+d3 136 wm 0.931932 ru 0.0670671 ld
+d4 136 wm 0.998999 ru 0 ld
+d5 136 wm 0.998999 ru 0.001001 ld
+d1 137 wm 0 ru 0 ld
+d2 137 wm 0 ru 0.397 ld
+d3 137 wm 0.397 ru 0.603 ld
+d4 137 wm 1 ru 0 ld
+d5 137 wm 1 ru 0 ld
+d1 138 wm 0 ru 0 ld
+d2 138 wm 0 ru 0.334 ld
+d3 138 wm 0.334 ru 0.666 ld
+d4 138 wm 1 ru 0 ld
+d5 138 wm 1 ru 0 ld
+d1 139 wm 0 ru 0 ld
+d2 139 wm 0 ru 0.407 ld
+d3 139 wm 0.407 ru 0.593 ld
+d4 139 wm 1 ru 0 ld
+d5 139 wm 1 ru 0 ld
+d1 140 wm 0 ru 0 ld
+d2 140 wm 0 ru 0.555 ld
+d3 140 wm 0.555 ru 0.445 ld
+d4 140 wm 1 ru 0 ld
+d5 140 wm 1 ru 0 ld
+d1 141 wm 0 ru 0.042 ld
+d2 141 wm 0.042 ru 0.818 ld
+d3 141 wm 0.86 ru 0.093 ld
+d4 141 wm 0.953 ru 0.034 ld
+d5 141 wm 0.987 ru 0.013 ld
+d1 142 wm 0 ru 0 ld
+d2 142 wm 0 ru 0.774 ld
+d3 142 wm 0.774 ru 0.226 ld
+d4 142 wm 1 ru 0 ld
+d5 142 wm 1 ru 0 ld
+d1 143 wm 0 ru 0 ld
+d2 143 wm 0 ru 0.885 ld
+d3 143 wm 0.885 ru 0.115 ld
+d4 143 wm 1 ru 0 ld
+d5 143 wm 1 ru 0 ld
+d1 144 wm 0 ru 0 ld
+d2 144 wm 0 ru 0.874 ld
+d3 144 wm 0.874 ru 0.126 ld
+d4 144 wm 1 ru 0 ld
+d5 144 wm 1 ru 0 ld
+d1 145 wm 0 ru 0 ld
+d2 145 wm 0 ru 0.952 ld
+d3 145 wm 0.952 ru 0.048 ld
+d4 145 wm 1 ru 0 ld
+d5 145 wm 1 ru 0 ld
+d1 146 wm 0 ru 0 ld
+d2 146 wm 0 ru 0.671672 ld
+d3 146 wm 0.671672 ru 0.328328 ld
+d4 146 wm 1 ru 0 ld
+d5 146 wm 1 ru 0 ld
+d1 147 wm 0 ru 0 ld
+d2 147 wm 0 ru 0.665666 ld
+d3 147 wm 0.665666 ru 0.334334 ld
+d4 147 wm 1 ru 0 ld
+d5 147 wm 1 ru 0 ld
+d1 148 wm 0 ru 0 ld
+d2 148 wm 0 ru 0.852 ld
+d3 148 wm 0.852 ru 0.147 ld
+d4 148 wm 0.999 ru 0 ld
+d5 148 wm 0.999 ru 0.001 ld
+d1 149 wm 0 ru 0.011 ld
+d2 149 wm 0.011 ru 0.988 ld
+d3 149 wm 0.999 ru 0.001 ld
+d4 149 wm 1 ru 0 ld
+d5 149 wm 1 ru 0 ld
+d1 150 wm 0 ru 0 ld
+d2 150 wm 0 ru 0.834 ld
+d3 150 wm 0.834 ru 0.166 ld
+d4 150 wm 1 ru 0 ld
+d5 150 wm 1 ru 0 ld
+d1 151 wm 0 ru 0 ld
+d2 151 wm 0 ru 0.893 ld
+d3 151 wm 0.893 ru 0.107 ld
+d4 151 wm 1 ru 0 ld
+d5 151 wm 1 ru 0 ld
+d1 152 wm 0 ru 0 ld
+d2 152 wm 0 ru 0.933 ld
+d3 152 wm 0.933 ru 0.067 ld
+d4 152 wm 1 ru 0 ld
+d5 152 wm 1 ru 0 ld
+d1 153 wm 0 ru 0 ld
+d2 153 wm 0 ru 0.872 ld
+d3 153 wm 0.872 ru 0.128 ld
+d4 153 wm 1 ru 0 ld
+d5 153 wm 1 ru 0 ld
+d1 154 wm 0 ru 0 ld
+d2 154 wm 0 ru 0.9 ld
+d3 154 wm 0.9 ru 0.1 ld
+d4 154 wm 1 ru 0 ld
+d5 154 wm 1 ru 0 ld
+d1 155 wm 0 ru 0 ld
+d2 155 wm 0 ru 0.905 ld
+d3 155 wm 0.905 ru 0.095 ld
+d4 155 wm 1 ru 0 ld
+d5 155 wm 1 ru 0 ld
+d1 156 wm 0 ru 0 ld
+d2 156 wm 0 ru 0.79 ld
+d3 156 wm 0.79 ru 0.21 ld
+d4 156 wm 1 ru 0 ld
+d5 156 wm 1 ru 0 ld
+d1 157 wm 0 ru 0 ld
+d2 157 wm 0 ru 0.848 ld
+d3 157 wm 0.848 ru 0.151 ld
+d4 157 wm 0.999 ru 0 ld
+d5 157 wm 0.999 ru 0.001 ld
+d1 158 wm 0 ru 0 ld
+d2 158 wm 0 ru 0.872 ld
+d3 158 wm 0.872 ru 0.128 ld
+d4 158 wm 1 ru 0 ld
+d5 158 wm 1 ru 0 ld
+d1 159 wm 0 ru 0.004 ld
+d2 159 wm 0.004 ru 0.858 ld
+d3 159 wm 0.862 ru 0.138 ld
+d4 159 wm 1 ru 0 ld
+d5 159 wm 1 ru 0 ld
+d1 160 wm 0 ru 0 ld
+d2 160 wm 0 ru 0.226 ld
+d3 160 wm 0.226 ru 0.774 ld
+d4 160 wm 1 ru 0 ld
+d5 160 wm 1 ru 0 ld
+d1 161 wm 0 ru 0 ld
+d2 161 wm 0 ru 0.681 ld
+d3 161 wm 0.681 ru 0.319 ld
+d4 161 wm 1 ru 0 ld
+d5 161 wm 1 ru 0 ld
+d1 162 wm 0 ru 0 ld
+d2 162 wm 0 ru 0.606 ld
+d3 162 wm 0.606 ru 0.394 ld
+d4 162 wm 1 ru 0 ld
+d5 162 wm 1 ru 0 ld
+d1 163 wm 0 ru 0 ld
+d2 163 wm 0 ru 0.855 ld
+d3 163 wm 0.855 ru 0.145 ld
+d4 163 wm 1 ru 0 ld
+d5 163 wm 1 ru 0 ld
+d1 164 wm 0 ru 0 ld
+d2 164 wm 0 ru 0.355 ld
+d3 164 wm 0.355 ru 0.645 ld
+d4 164 wm 1 ru 0 ld
+d5 164 wm 1 ru 0 ld
+d1 165 wm 0 ru 0 ld
+d2 165 wm 0 ru 0.278 ld
+d3 165 wm 0.278 ru 0.722 ld
+d4 165 wm 1 ru 0 ld
+d5 165 wm 1 ru 0 ld
+d1 166 wm 0 ru 0 ld
+d2 166 wm 0 ru 0.082 ld
+d3 166 wm 0.082 ru 0.918 ld
+d4 166 wm 1 ru 0 ld
+d5 166 wm 1 ru 0 ld
+d1 167 wm 0 ru 0 ld
+d2 167 wm 0 ru 0 ld
+d3 167 wm 0 ru 1 ld
+d4 167 wm 1 ru 0 ld
+d5 167 wm 1 ru 0 ld
+d1 168 wm 0 ru 0 ld
+d2 168 wm 0 ru 0.132 ld
+d3 168 wm 0.132 ru 0.868 ld
+d4 168 wm 1 ru 0 ld
+d5 168 wm 1 ru 0 ld
+d1 169 wm 0 ru 0 ld
+d2 169 wm 0 ru 0.478 ld
+d3 169 wm 0.478 ru 0.522 ld
+d4 169 wm 1 ru 0 ld
+d5 169 wm 1 ru 0 ld
+d1 170 wm 0 ru 0 ld
+d2 170 wm 0 ru 0.347 ld
+d3 170 wm 0.347 ru 0.653 ld
+d4 170 wm 1 ru 0 ld
+d5 170 wm 1 ru 0 ld
+d1 171 wm 0 ru 0 ld
+d2 171 wm 0 ru 0.961 ld
+d3 171 wm 0.961 ru 0.039 ld
+d4 171 wm 1 ru 0 ld
+d5 171 wm 1 ru 0 ld
+d1 172 wm 0 ru 0 ld
+d2 172 wm 0 ru 0.903 ld
+d3 172 wm 0.903 ru 0.097 ld
+d4 172 wm 1 ru 0 ld
+d5 172 wm 1 ru 0 ld
+d1 173 wm 0 ru 0 ld
+d2 173 wm 0 ru 0.927928 ld
+d3 173 wm 0.927928 ru 0.0720721 ld
+d4 173 wm 1 ru 0 ld
+d5 173 wm 1 ru 0 ld
+d1 174 wm 0 ru 0 ld
+d2 174 wm 0 ru 0.938 ld
+d3 174 wm 0.938 ru 0.062 ld
+d4 174 wm 1 ru 0 ld
+d5 174 wm 1 ru 0 ld
+d1 175 wm 0 ru 0 ld
+d2 175 wm 0 ru 0.958 ld
+d3 175 wm 0.958 ru 0.042 ld
+d4 175 wm 1 ru 0 ld
+d5 175 wm 1 ru 0 ld
+d1 176 wm 0 ru 0 ld
+d2 176 wm 0 ru 0.94 ld
+d3 176 wm 0.94 ru 0.06 ld
+d4 176 wm 1 ru 0 ld
+d5 176 wm 1 ru 0 ld
+d1 177 wm 0 ru 0 ld
+d2 177 wm 0 ru 0.867 ld
+d3 177 wm 0.867 ru 0.133 ld
+d4 177 wm 1 ru 0 ld
+d5 177 wm 1 ru 0 ld
+d1 178 wm 0 ru 0 ld
+d2 178 wm 0 ru 0.789 ld
+d3 178 wm 0.789 ru 0.211 ld
+d4 178 wm 1 ru 0 ld
+d5 178 wm 1 ru 0 ld
+d1 179 wm 0 ru 0 ld
+d2 179 wm 0 ru 0.881 ld
+d3 179 wm 0.881 ru 0.119 ld
+d4 179 wm 1 ru 0 ld
+d5 179 wm 1 ru 0 ld
+d1 180 wm 0 ru 0 ld
+d2 180 wm 0 ru 0.371 ld
+d3 180 wm 0.371 ru 0.629 ld
+d4 180 wm 1 ru 0 ld
+d5 180 wm 1 ru 0 ld
+d1 181 wm 0 ru 0.001998 ld
+d2 181 wm 0.001998 ru 0.364635 ld
+d3 181 wm 0.366633 ru 0.633367 ld
+d4 181 wm 1 ru 0 ld
+d5 181 wm 1 ru 0 ld
+d1 182 wm 0 ru 0 ld
+d2 182 wm 0 ru 0.386 ld
+d3 182 wm 0.386 ru 0.614 ld
+d4 182 wm 1 ru 0 ld
+d5 182 wm 1 ru 0 ld
+d1 183 wm 0 ru 0 ld
+d2 183 wm 0 ru 0.376 ld
+d3 183 wm 0.376 ru 0.624 ld
+d4 183 wm 1 ru 0 ld
+d5 183 wm 1 ru 0 ld
+d1 184 wm 0 ru 0 ld
+d2 184 wm 0 ru 0.205 ld
+d3 184 wm 0.205 ru 0.795 ld
+d4 184 wm 1 ru 0 ld
+d5 184 wm 1 ru 0 ld
+d1 185 wm 0 ru 0 ld
+d2 185 wm 0 ru 0 ld
+d3 185 wm 0 ru 1 ld
+d4 185 wm 1 ru 0 ld
+d5 185 wm 1 ru 0 ld
+d1 186 wm 0 ru 0 ld
+d2 186 wm 0 ru 0.163 ld
+d3 186 wm 0.163 ru 0.837 ld
+d4 186 wm 1 ru 0 ld
+d5 186 wm 1 ru 0 ld
+d1 187 wm 0 ru 0 ld
+d2 187 wm 0 ru 0.214 ld
+d3 187 wm 0.214 ru 0.786 ld
+d4 187 wm 1 ru 0 ld
+d5 187 wm 1 ru 0 ld
+d1 188 wm 0 ru 0 ld
+d2 188 wm 0 ru 0.576 ld
+d3 188 wm 0.576 ru 0.424 ld
+d4 188 wm 1 ru 0 ld
+d5 188 wm 1 ru 0 ld
+d1 189 wm 0 ru 0 ld
+d2 189 wm 0 ru 0.791 ld
+d3 189 wm 0.791 ru 0.209 ld
+d4 189 wm 1 ru 0 ld
+d5 189 wm 1 ru 0 ld
+d1 190 wm 0 ru 0 ld
+d2 190 wm 0 ru 0.816 ld
+d3 190 wm 0.816 ru 0.184 ld
+d4 190 wm 1 ru 0 ld
+d5 190 wm 1 ru 0 ld
+d1 191 wm 0 ru 0 ld
+d2 191 wm 0 ru 0.803 ld
+d3 191 wm 0.803 ru 0.197 ld
+d4 191 wm 1 ru 0 ld
+d5 191 wm 1 ru 0 ld
+d1 192 wm 0 ru 0.05 ld
+d2 192 wm 0.05 ru 0.657 ld
+d3 192 wm 0.707 ru 0.165 ld
+d4 192 wm 0.872 ru 0.049 ld
+d5 192 wm 0.921 ru 0.079 ld
+d1 193 wm 0 ru 0 ld
+d2 193 wm 0 ru 0.9 ld
+d3 193 wm 0.9 ru 0.1 ld
+d4 193 wm 1 ru 0 ld
+d5 193 wm 1 ru 0 ld
+d1 194 wm 0 ru 0.019 ld
+d2 194 wm 0.019 ru 0.882 ld
+d3 194 wm 0.901 ru 0.099 ld
+d4 194 wm 1 ru 0 ld
+d5 194 wm 1 ru 0 ld
+d1 195 wm 0 ru 0 ld
+d2 195 wm 0 ru 0.856 ld
+d3 195 wm 0.856 ru 0.144 ld
+d4 195 wm 1 ru 0 ld
+d5 195 wm 1 ru 0 ld
+d1 196 wm 0 ru 0.027 ld
+d2 196 wm 0.027 ru 0.822 ld
+d3 196 wm 0.849 ru 0.063 ld
+d4 196 wm 0.912 ru 0.025 ld
+d5 196 wm 0.937 ru 0.063 ld
+d1 197 wm 0 ru 0 ld
+d2 197 wm 0 ru 0.87 ld
+d3 197 wm 0.87 ru 0.13 ld
+d4 197 wm 1 ru 0 ld
+d5 197 wm 1 ru 0 ld
+d1 198 wm 0 ru 0 ld
+d2 198 wm 0 ru 0.894 ld
+d3 198 wm 0.894 ru 0.094 ld
+d4 198 wm 0.988 ru 0 ld
+d5 198 wm 0.988 ru 0.012 ld
+d1 199 wm 0 ru 0.002 ld
+d2 199 wm 0.002 ru 0.8 ld
+d3 199 wm 0.802 ru 0.177 ld
+d4 199 wm 0.979 ru 0 ld
+d5 199 wm 0.979 ru 0.021 ld
+d1 200 wm 0 ru 0.007 ld
+d2 200 wm 0.007 ru 0.772 ld
+d3 200 wm 0.779 ru 0.208 ld
+d4 200 wm 0.987 ru 0.009 ld
+d5 200 wm 0.996 ru 0.004 ld
+d1 201 wm 0 ru 0 ld
+d2 201 wm 0 ru 0.829 ld
+d3 201 wm 0.829 ru 0.164 ld
+d4 201 wm 0.993 ru 0 ld
+d5 201 wm 0.993 ru 0.007 ld
+d1 202 wm 0 ru 0.003 ld
+d2 202 wm 0.003 ru 0.907 ld
+d3 202 wm 0.91 ru 0.087 ld
+d4 202 wm 0.997 ru 0.003 ld
+d5 202 wm 1 ru 0 ld
+d1 203 wm 0 ru 0 ld
+d2 203 wm 0 ru 0.939 ld
+d3 203 wm 0.939 ru 0.061 ld
+d4 203 wm 1 ru 0 ld
+d5 203 wm 1 ru 0 ld
+d1 204 wm 0 ru 0 ld
+d2 204 wm 0 ru 0.95 ld
+d3 204 wm 0.95 ru 0.05 ld
+d4 204 wm 1 ru 0 ld
+d5 204 wm 1 ru 0 ld
+d1 205 wm 0 ru 0 ld
+d2 205 wm 0 ru 0.882 ld
+d3 205 wm 0.882 ru 0.118 ld
+d4 205 wm 1 ru 0 ld
+d5 205 wm 1 ru 0 ld
+d1 206 wm 0 ru 0 ld
+d2 206 wm 0 ru 0.81 ld
+d3 206 wm 0.81 ru 0.19 ld
+d4 206 wm 1 ru 0 ld
+d5 206 wm 1 ru 0 ld
+d1 207 wm 0 ru 0 ld
+d2 207 wm 0 ru 0.826827 ld
+d3 207 wm 0.826827 ru 0.173173 ld
+d4 207 wm 1 ru 0 ld
+d5 207 wm 1 ru 0 ld
+d1 208 wm 0 ru 0.037 ld
+d2 208 wm 0.037 ru 0.837 ld
+d3 208 wm 0.874 ru 0.109 ld
+d4 208 wm 0.983 ru 0 ld
+d5 208 wm 0.983 ru 0.017 ld
+d1 209 wm 0 ru 0 ld
+d2 209 wm 0 ru 0.331 ld
+d3 209 wm 0.331 ru 0.669 ld
+d4 209 wm 1 ru 0 ld
+d5 209 wm 1 ru 0 ld
+d1 210 wm 0 ru 0 ld
+d2 210 wm 0 ru 0.321 ld
+d3 210 wm 0.321 ru 0.679 ld
+d4 210 wm 1 ru 0 ld
+d5 210 wm 1 ru 0 ld
+d1 211 wm 0 ru 0 ld
+d2 211 wm 0 ru 0.298 ld
+d3 211 wm 0.298 ru 0.702 ld
+d4 211 wm 1 ru 0 ld
+d5 211 wm 1 ru 0 ld
+d1 212 wm 0 ru 0 ld
+d2 212 wm 0 ru 0.355355 ld
+d3 212 wm 0.355355 ru 0.644645 ld
+d4 212 wm 1 ru 0 ld
+d5 212 wm 1 ru 0 ld
+d1 213 wm 0 ru 0 ld
+d2 213 wm 0 ru 0.506 ld
+d3 213 wm 0.506 ru 0.494 ld
+d4 213 wm 1 ru 0 ld
+d5 213 wm 1 ru 0 ld
+d1 214 wm 0 ru 0 ld
+d2 214 wm 0 ru 0.528 ld
+d3 214 wm 0.528 ru 0.472 ld
+d4 214 wm 1 ru 0 ld
+d5 214 wm 1 ru 0 ld
+d1 215 wm 0 ru 0.00900901 ld
+d2 215 wm 0.00900901 ru 0.411411 ld
+d3 215 wm 0.42042 ru 0.57958 ld
+d4 215 wm 1 ru 0 ld
+d5 215 wm 1 ru 0 ld
+d1 216 wm 0 ru 0 ld
+d2 216 wm 0 ru 0.438438 ld
+d3 216 wm 0.438438 ru 0.561562 ld
+d4 216 wm 1 ru 0 ld
+d5 216 wm 1 ru 0 ld
+d1 217 wm 0 ru 0.007 ld
+d2 217 wm 0.007 ru 0.398 ld
+d3 217 wm 0.405 ru 0.595 ld
+d4 217 wm 1 ru 0 ld
+d5 217 wm 1 ru 0 ld
+d1 218 wm 0 ru 0 ld
+d2 218 wm 0 ru 0.870871 ld
+d3 218 wm 0.870871 ru 0.121121 ld
+d4 218 wm 0.991992 ru 0.00800801 ld
+d5 218 wm 1 ru 0 ld
+d1 219 wm 0 ru 0.001 ld
+d2 219 wm 0.001 ru 0.904 ld
+d3 219 wm 0.905 ru 0.049 ld
+d4 219 wm 0.954 ru 0 ld
+d5 219 wm 0.954 ru 0.046 ld
+d1 220 wm 0 ru 0 ld
+d2 220 wm 0 ru 0.71 ld
+d3 220 wm 0.71 ru 0.278 ld
+d4 220 wm 0.988 ru 0 ld
+d5 220 wm 0.988 ru 0.012 ld
+d1 221 wm 0 ru 0 ld
+d2 221 wm 0 ru 0.777 ld
+d3 221 wm 0.777 ru 0.208 ld
+d4 221 wm 0.985 ru 0 ld
+d5 221 wm 0.985 ru 0.015 ld
+d1 222 wm 0 ru 0 ld
+d2 222 wm 0 ru 0.897 ld
+d3 222 wm 0.897 ru 0.103 ld
+d4 222 wm 1 ru 0 ld
+d5 222 wm 1 ru 0 ld
+d1 223 wm 0 ru 0 ld
+d2 223 wm 0 ru 0.886 ld
+d3 223 wm 0.886 ru 0.114 ld
+d4 223 wm 1 ru 0 ld
+d5 223 wm 1 ru 0 ld
+d1 224 wm 0 ru 0 ld
+d2 224 wm 0 ru 0.998 ld
+d3 224 wm 0.998 ru 0.002 ld
+d4 224 wm 1 ru 0 ld
+d5 224 wm 1 ru 0 ld
+d1 225 wm 0 ru 0 ld
+d2 225 wm 0 ru 0.89 ld
+d3 225 wm 0.89 ru 0.11 ld
+d4 225 wm 1 ru 0 ld
+d5 225 wm 1 ru 0 ld
+d1 226 wm 0 ru 0 ld
+d2 226 wm 0 ru 0.938 ld
+d3 226 wm 0.938 ru 0.062 ld
+d4 226 wm 1 ru 0 ld
+d5 226 wm 1 ru 0 ld
+d1 227 wm 0 ru 0 ld
+d2 227 wm 0 ru 0.943 ld
+d3 227 wm 0.943 ru 0.057 ld
+d4 227 wm 1 ru 0 ld
+d5 227 wm 1 ru 0 ld
+d1 228 wm 0 ru 0 ld
+d2 228 wm 0 ru 0.953 ld
+d3 228 wm 0.953 ru 0.047 ld
+d4 228 wm 1 ru 0 ld
+d5 228 wm 1 ru 0 ld
+d1 229 wm 0 ru 0 ld
+d2 229 wm 0 ru 0.89 ld
+d3 229 wm 0.89 ru 0.11 ld
+d4 229 wm 1 ru 0 ld
+d5 229 wm 1 ru 0 ld
+d1 230 wm 0 ru 0 ld
+d2 230 wm 0 ru 0.908 ld
+d3 230 wm 0.908 ru 0.092 ld
+d4 230 wm 1 ru 0 ld
+d5 230 wm 1 ru 0 ld
+d1 231 wm 0 ru 0 ld
+d2 231 wm 0 ru 0.908 ld
+d3 231 wm 0.908 ru 0.092 ld
+d4 231 wm 1 ru 0 ld
+d5 231 wm 1 ru 0 ld
+d1 232 wm 0 ru 0 ld
+d2 232 wm 0 ru 0.901 ld
+d3 232 wm 0.901 ru 0.099 ld
+d4 232 wm 1 ru 0 ld
+d5 232 wm 1 ru 0 ld
+d1 233 wm 0 ru 0 ld
+d2 233 wm 0 ru 0.906 ld
+d3 233 wm 0.906 ru 0.094 ld
+d4 233 wm 1 ru 0 ld
+d5 233 wm 1 ru 0 ld
+d1 234 wm 0 ru 0 ld
+d2 234 wm 0 ru 0.639 ld
+d3 234 wm 0.639 ru 0.361 ld
+d4 234 wm 1 ru 0 ld
+d5 234 wm 1 ru 0 ld
+d1 235 wm 0 ru 0.002 ld
+d2 235 wm 0.002 ru 0.934 ld
+d3 235 wm 0.936 ru 0.064 ld
+d4 235 wm 1 ru 0 ld
+d5 235 wm 1 ru 0 ld
+d1 236 wm 0 ru 0 ld
+d2 236 wm 0 ru 0.641 ld
+d3 236 wm 0.641 ru 0.359 ld
+d4 236 wm 1 ru 0 ld
+d5 236 wm 1 ru 0 ld
+d1 237 wm 0 ru 0 ld
+d2 237 wm 0 ru 0.708 ld
+d3 237 wm 0.708 ru 0.292 ld
+d4 237 wm 1 ru 0 ld
+d5 237 wm 1 ru 0 ld
+d1 238 wm 0 ru 0 ld
+d2 238 wm 0 ru 0.712 ld
+d3 238 wm 0.712 ru 0.286 ld
+d4 238 wm 0.998 ru 0 ld
+d5 238 wm 0.998 ru 0.002 ld
+d1 239 wm 0 ru 0 ld
+d2 239 wm 0 ru 0.664665 ld
+d3 239 wm 0.664665 ru 0.335335 ld
+d4 239 wm 1 ru 0 ld
+d5 239 wm 1 ru 0 ld
+d1 240 wm 0 ru 0 ld
+d2 240 wm 0 ru 0.68 ld
+d3 240 wm 0.68 ru 0.32 ld
+d4 240 wm 1 ru 0 ld
+d5 240 wm 1 ru 0 ld
+d1 241 wm 0 ru 0 ld
+d2 241 wm 0 ru 0.956 ld
+d3 241 wm 0.956 ru 0.044 ld
+d4 241 wm 1 ru 0 ld
+d5 241 wm 1 ru 0 ld
+d1 242 wm 0 ru 0 ld
+d2 242 wm 0 ru 0.944 ld
+d3 242 wm 0.944 ru 0.056 ld
+d4 242 wm 1 ru 0 ld
+d5 242 wm 1 ru 0 ld
+d1 243 wm 0 ru 0 ld
+d2 243 wm 0 ru 0.255 ld
+d3 243 wm 0.255 ru 0.745 ld
+d4 243 wm 1 ru 0 ld
+d5 243 wm 1 ru 0 ld
+d1 244 wm 0 ru 0 ld
+d2 244 wm 0 ru 0.853 ld
+d3 244 wm 0.853 ru 0.147 ld
+d4 244 wm 1 ru 0 ld
+d5 244 wm 1 ru 0 ld
+d1 245 wm 0 ru 0 ld
+d2 245 wm 0 ru 0.938 ld
+d3 245 wm 0.938 ru 0.062 ld
+d4 245 wm 1 ru 0 ld
+d5 245 wm 1 ru 0 ld
+d1 246 wm 0 ru 0 ld
+d2 246 wm 0 ru 0.872 ld
+d3 246 wm 0.872 ru 0.128 ld
+d4 246 wm 1 ru 0 ld
+d5 246 wm 1 ru 0 ld
+d1 247 wm 0 ru 0 ld
+d2 247 wm 0 ru 0.982 ld
+d3 247 wm 0.982 ru 0.018 ld
+d4 247 wm 1 ru 0 ld
+d5 247 wm 1 ru 0 ld
+d1 248 wm 0 ru 0 ld
+d2 248 wm 0 ru 0.731732 ld
+d3 248 wm 0.731732 ru 0.268268 ld
+d4 248 wm 1 ru 0 ld
+d5 248 wm 1 ru 0 ld
+d1 249 wm 0 ru 0 ld
+d2 249 wm 0 ru 0.845 ld
+d3 249 wm 0.845 ru 0.155 ld
+d4 249 wm 1 ru 0 ld
+d5 249 wm 1 ru 0 ld
+d1 250 wm 0 ru 0.003 ld
+d2 250 wm 0.003 ru 0.919 ld
+d3 250 wm 0.922 ru 0.072 ld
+d4 250 wm 0.994 ru 0 ld
+d5 250 wm 0.994 ru 0.006 ld
+d1 251 wm 0 ru 0.028 ld
+d2 251 wm 0.028 ru 0.89 ld
+d3 251 wm 0.918 ru 0.025 ld
+d4 251 wm 0.943 ru 0.018 ld
+d5 251 wm 0.961 ru 0.039 ld
+d1 252 wm 0 ru 0.024975 ld
+d2 252 wm 0.024975 ru 0.944056 ld
+d3 252 wm 0.969031 ru 0.001998 ld
+d4 252 wm 0.971029 ru 0.027972 ld
+d5 252 wm 0.999001 ru 0.000999001 ld
+d1 253 wm 0 ru 0 ld
+d2 253 wm 0 ru 0.862 ld
+d3 253 wm 0.862 ru 0.138 ld
+d4 253 wm 1 ru 0 ld
+d5 253 wm 1 ru 0 ld
+d1 254 wm 0 ru 0.008 ld
+d2 254 wm 0.008 ru 0.935 ld
+d3 254 wm 0.943 ru 0.057 ld
+d4 254 wm 1 ru 0 ld
+d5 254 wm 1 ru 0 ld
+d1 255 wm 0 ru 0.001 ld
+d2 255 wm 0.001 ru 0.88 ld
+d3 255 wm 0.881 ru 0.119 ld
+d4 255 wm 1 ru 0 ld
+d5 255 wm 1 ru 0 ld
+d1 256 wm 0 ru 0.001001 ld
+d2 256 wm 0.001001 ru 0.858859 ld
+d3 256 wm 0.85986 ru 0.14014 ld
+d4 256 wm 1 ru 0 ld
+d5 256 wm 1 ru 0 ld
+d1 257 wm 0 ru 0 ld
+d2 257 wm 0 ru 0.815 ld
+d3 257 wm 0.815 ru 0.185 ld
+d4 257 wm 1 ru 0 ld
+d5 257 wm 1 ru 0 ld
+d1 258 wm 0 ru 0 ld
+d2 258 wm 0 ru 0.847 ld
+d3 258 wm 0.847 ru 0.153 ld
+d4 258 wm 1 ru 0 ld
+d5 258 wm 1 ru 0 ld
+d1 259 wm 0 ru 0 ld
+d2 259 wm 0 ru 0.792 ld
+d3 259 wm 0.792 ru 0.208 ld
+d4 259 wm 1 ru 0 ld
+d5 259 wm 1 ru 0 ld
+d1 260 wm 0 ru 0 ld
+d2 260 wm 0 ru 0.856 ld
+d3 260 wm 0.856 ru 0.144 ld
+d4 260 wm 1 ru 0 ld
+d5 260 wm 1 ru 0 ld
+d1 261 wm 0 ru 0 ld
+d2 261 wm 0 ru 0.826 ld
+d3 261 wm 0.826 ru 0.174 ld
+d4 261 wm 1 ru 0 ld
+d5 261 wm 1 ru 0 ld
+d1 262 wm 0 ru 0 ld
+d2 262 wm 0 ru 0.317 ld
+d3 262 wm 0.317 ru 0.683 ld
+d4 262 wm 1 ru 0 ld
+d5 262 wm 1 ru 0 ld
+setsep c0 118 wm 0 M 0 bh V stroke
+%atop c0 118 145 abm gsave aato rotate (3) show grestore
+c0 118 145 bbm (macrocarpa) rotshow
+
+% CONCLUDING INFORMATION
+% Values of parameters used in distruct: INFILE_POPQ=hybseq.v3.2018-10-10_f.popq, INFILE_INDIVQ=hybseq.v3.2018-10-10_f.indivq, INFILE_LABEL_ATOP=, INFILE_LABEL_BELOW=hybseq.v3.2018-10-10.pop_labels, INFILE_CLUST_PERM=quercus.perm, OUTFILE=hybseq.v3.2018-10-10.ps, K=5, NUMPOPS=5, NUMINDS=263, PRINT_INDIVS=1, PRINT_LABEL_ATOP=0, PRINT_LABEL_BELOW=1, PRINT_SEP=1, FONTHEIGHT=6, DIST_ABOVE=5, DIST_BELOW=-7, BOXHEIGHT=72, INDIVWIDTH=1, ORIENTATION=0, XORIGIN=50, YORIGIN=150, XSCALE=1, YSCALE=1, ANGLE_LABEL_ATOP=60, ANGLE_LABEL_BELOW=60, LINEWIDTH_RIM=1, LINEWIDTH_SEP=1, LINEWIDTH_IND=0.2, GRAYSCALE=0, ECHO_DATA=1, REPRINT_DATA=1 PRINT_INFILE_NAME=0 
+grestore
+showpage
+%EOF
