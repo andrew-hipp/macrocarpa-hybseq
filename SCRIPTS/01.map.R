@@ -1,3 +1,4 @@
+library(rgeos)
 library(ggplot2)
 library(ggmap)
 library(maps)
