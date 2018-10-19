@@ -16,7 +16,14 @@ tr.dat <- tr.dat[!is.na(tr.dat$long) | is.na(tr.dat$lat), ]
 tr.dat <- as.matrix(tr.dat)
 tr.dat <- apply(tr.dat, 1:2, as.numeric)
 tr.mac <- drop.tip(tr, grep('macrocarpa', tr$tip.label, invert = T))
-x= phylo.to.map(drop.tip(tr.mac, setdiff(tr$tip.label, row.names(tr.dat))),
+
+pdf('../out/phylo.notips.pdf', 13.3, 7.5)
+plot(tr,show.node.label=F, show.tip.label=F, cex=0.4)
+dev.off()
+
+pdf('../out/phylo.to.map.pdf')
+x = phylo.to.map(drop.tip(tr.mac, setdiff(tr$tip.label, row.names(tr.dat))),
               tr.dat[grep('macrocarpa', row.names(tr.dat)), ],
               xlim = c(-120, -70), ylim = c(30, 55),
               fsize = 0.00000001)
+dev.off()
