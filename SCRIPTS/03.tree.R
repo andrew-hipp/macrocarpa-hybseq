@@ -17,6 +17,10 @@ tr.dat <- as.matrix(tr.dat)
 tr.dat <- apply(tr.dat, 1:2, as.numeric)
 tr.mac <- drop.tip(tr, grep('macrocarpa', tr$tip.label, invert = T))
 
+pdf('../out/phylo.notips.pdf', 13.3, 7.5)
+plot(tr,show.node.label=F, show.tip.label=F, cex=0.4)
+dev.off()
+
 pdf('../out/phylo.to.map.pdf')
 x = phylo.to.map(drop.tip(tr.mac, setdiff(tr$tip.label, row.names(tr.dat))),
               tr.dat[grep('macrocarpa', row.names(tr.dat)), ],
