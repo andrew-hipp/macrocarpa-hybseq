@@ -107,7 +107,16 @@ p.out <- list(
                           #fill = 'red',
                           #color = 'black',
                           alpha = 0.3
+                        ),
+
+  muehlenbergii = p + geom_polygon(data = mapsLittle$all[mapsLittle$all$Species %in%
+                                                    c('Quercus muehlenbergii'), ],
+                          aes(x =long, y =lat, group = spGroup, fill = Species),
+                          #fill = 'red',
+                          #color = 'black',
+                          alpha = 0.3
                           )
+
                         )# close list
 
 for(i in names(p.out)) {
