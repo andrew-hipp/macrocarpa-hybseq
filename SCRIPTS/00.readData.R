@@ -9,7 +9,7 @@ library(magrittr)
 
 source('../SCRIPTS/DNAbin2str.R')
 
-nCores = 14
+nCores = 1 # update to new number of cores if you are not on windows
 if(!exists('readDNA')) readDNA = TRUE
 cleanDNAnames = TRUE
 
@@ -42,7 +42,7 @@ dat.meta.ext$sp <- sapply(strsplit(dat.meta.ext$SPECIES, " ", fixed = T), functi
 dat.meta.spm <- read.delim('../DATA/dna.database/OAKS_America_Accessions_Database_excel_2017-05-15.tsv', as.is = T)
 dat.meta.ext$lat <- dat.meta.spm[match(dat.meta.ext$SPECIMEN.CODE, dat.meta.spm$Specimen.CODE), 'latitude.orig']
 dat.meta.ext$long <- dat.meta.spm[match(dat.meta.ext$SPECIMEN.CODE, dat.meta.spm$Specimen.CODE), 'longitude.orig']
-dat.meta.ext$state <- dat.meta.spm[match(dat.meta.ext$SPECIMEN.CODE, dat.meta.spm$Specimen.CODE), 'state.province'] 
+dat.meta.ext$state <- dat.meta.spm[match(dat.meta.ext$SPECIMEN.CODE, dat.meta.spm$Specimen.CODE), 'state.province']
 dat.mapping <-  dat.meta.ext[row.names(dna.all), c('long', 'lat', 'sp')] %>%
   as.data.frame
 names(dat.mapping) <- c('long', 'lat', 'Species')
