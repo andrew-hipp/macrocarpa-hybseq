@@ -25,3 +25,6 @@ names(dat.mac)[names(dat.mac) == 'lat'] <- 'Latitude'
 
 dat.alba <- dat.mac[dat.mac$Species == 'Quercus alba', ]
 dat.mac <- dat.mac[dat.mac$Species == 'Quercus macrocarpa', ]
+
+write.csv(dat.mac, '../out/dat.mac.csv')
+write.csv(dat.alba, '../out/dat.alba.csv')
