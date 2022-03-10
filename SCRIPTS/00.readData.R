@@ -10,7 +10,7 @@ library(magrittr)
 source('../SCRIPTS/DNAbin2str.R')
 writeStructure = FALSE
 
-nCores = 1 # update to new number of cores if you are not on windows
+nCores = 16 # update to new number of cores if you are not on windows
 if(!exists('readDNA')) readDNA = TRUE
 cleanDNAnames = TRUE
 
