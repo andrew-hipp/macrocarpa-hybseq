@@ -8,6 +8,7 @@ library(pegas)
 library(magrittr)
 
 source('../SCRIPTS/DNAbin2str.R')
+writeStructure = FALSE
 
 nCores = 1 # update to new number of cores if you are not on windows
 if(!exists('readDNA')) readDNA = TRUE
@@ -55,6 +56,8 @@ dat.mapping$Species[grep('Quercus', dat.mapping$Species, invert = T)] <-
 dat.mapping <- dat.mapping[dat.mapping$Species != "Quercus NA", ]
 
 ## write structure file
+if(!writeStructure) stop('** NOT WRITING STRUCTURE FILE **')
+
 row.names(dna.all) <-
   paste(dat.meta.ext[row.names(dna.all), 'sp'],
         row.names(dna.all),
