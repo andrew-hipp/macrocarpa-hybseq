@@ -23,6 +23,7 @@ dat.mac$Radius <- rep(0.75, dim(dat.mac)[1])
 names(dat.mac)[names(dat.mac) == 'long'] <- 'Longitude'
 names(dat.mac)[names(dat.mac) == 'lat'] <- 'Latitude'
 
+stop()
 dat.alba <- dat.mac[dat.mac$Species == 'Quercus alba', ]
 dat.mac <- dat.mac[dat.mac$Species == 'Quercus macrocarpa', ]
 
