@@ -56,7 +56,6 @@ dat.mapping$Species[grep('Quercus', dat.mapping$Species, invert = T)] <-
 dat.mapping <- dat.mapping[dat.mapping$Species != "Quercus NA", ]
 
 ## write structure file
-if(!writeStructure) stop('** NOT WRITING STRUCTURE FILE **')
 
 row.names(dna.all) <-
   paste(dat.meta.ext[row.names(dna.all), 'sp'],
@@ -65,5 +64,8 @@ row.names(dna.all) <-
         )
 
 inds.struct <- grep('macro|alba|stellata|bicolor|muehl', row.names(dna.all), value = T)
+
+
+if(!writeStructure) stop('** NOT WRITING STRUCTURE FILE **')
 a = DNAbin2str(list(dna.all[grep('macro|alba|stellata|bicolor|muehl', row.names(dna.all)), ]),
                 file='hybseq.v3.2018-10-10')
