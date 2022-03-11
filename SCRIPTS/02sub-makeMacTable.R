@@ -22,10 +22,28 @@ dat.mac <- dat.mac[,c(grep('Quercus', names(dat.mac), value = T), 'long', 'lat',
 dat.mac$Radius <- rep(0.75, dim(dat.mac)[1])
 names(dat.mac)[names(dat.mac) == 'long'] <- 'Longitude'
 names(dat.mac)[names(dat.mac) == 'lat'] <- 'Latitude'
+dat.mac$'Quercus macrocarpa' <-
+  dat.mac$'Quercus macrocarpa-1' +
+  dat.mac$'Quercus macrocarpa-2'
 
-stop()
+taxa2do <- c('Quercus muehlenbergii',
+            'Quercus alba',
+            'Quercus bicolor',
+            'Quercus stellata',
+            'Quercus macrocarpa')
+
+for(i in row.names(dat.mac)) {
+  
+}
+
+
+
+
+
+
+
 dat.alba <- dat.mac[dat.mac$Species == 'Quercus alba', ]
-dat.mac <- dat.mac[dat.mac$Species == 'Quercus macrocarpa', ]
-
+dat.mac.subset <- dat.mac[dat.mac$Species == 'Quercus macrocarpa', ]
 write.csv(dat.mac, '../out/dat.mac.csv')
+write.csv(dat.mac.subset, '../out/dat.mac.subset.csv')
 write.csv(dat.alba, '../out/dat.alba.csv')
